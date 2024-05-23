@@ -1,0 +1,26 @@
+@import './../../../../styles.scss';
+
+header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 37px 100px;
+}
+
+.name {
+    font-size: 32px;
+    font-weight: 700;
+    cursor: pointer;
+}
+
+.menu {
+    display: flex;
+    font-size: 23px;
+    font-weight: 400;
+    gap: 30px;
+
+    a:hover {
+        color: $hover-link-color;
+        cursor: pointer;
+    }
+}

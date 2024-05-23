@@ -1,0 +1,40 @@
+@import './../../../styles.scss';
+
+.atf {
+    display: flex;
+    align-items: center;
+}
+
+.head-container {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.text-container {
+    display: flex;
+}
+
+.vertikal {
+    font-size: 64px;
+    font-weight: 400;
+    rotate: -90deg;
+}
+
+.name {
+    font-size: 90px;
+    font-weight: 700;
+}
+
+.title {
+    color: #9747FF;
+    font-size: 58px;
+    font-weight: 400;
+}
+
+button {
+    color: $primary-font-color;
+    font-size: $button-font-size;
+    padding: 15px 30px;
+    border-radius: 10px;
+}
