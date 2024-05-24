@@ -1,40 +1,143 @@
 @import './../../../styles.scss';
 
 .atf {
+    position: relative;
+    box-sizing: border-box;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding-left: 47px;
+    padding-right: 100px;
+    width: 1440px;
+    //overflow: hidden;
+}
+
+.test {
     display: flex;
     align-items: center;
 }
 
+.curved-background-container {
+    position: absolute;
+    left: 0;
+    top: 264px;
+    z-index: 2;
+
+
+}
+
 .head-container {
+    position: relative;
+    top: -54px;
     display: flex;
     flex-direction: column;
     align-items: center;
+    gap: 44px;
+    margin-left: -113px;
+    z-index: 3;
+}
+
+.picture-container {
+
+    position: relative;
+    //top: 46px;
+    z-index: 2;
+
+
+}
+
+.shadow-dots {
+    position: absolute;
+    top: 77px;
+    left: -104px;
+    z-index: 1;
+
 }
 
 .text-container {
     display: flex;
+    align-items: center;
 }
 
 .vertikal {
     font-size: 64px;
     font-weight: 400;
     rotate: -90deg;
+    margin-bottom: -22px;
+    white-space: nowrap;
 }
 
 .name {
     font-size: 90px;
     font-weight: 700;
+    margin-bottom: -24px;
 }
 
 .title {
     color: #9747FF;
     font-size: 58px;
     font-weight: 400;
+    white-space: nowrap;
 }
 
-button {
+.main-button {
     color: $primary-font-color;
     font-size: $button-font-size;
     padding: 15px 30px;
     border-radius: 10px;
+    background-color: $hover-link-color;
+    transition: all 100ms ease-in-out;
+
+    &:hover {
+        background-color: #9747FF;
+        padding: 20px 40px;
+    }
+}
+
+.social-links-container {
+    display: flex;
+    align-items: center;
+    position: absolute;
+    left: 0;
+    bottom: -72px;
+    z-index: 5;
+    gap: 42px;
+    font-size: 23px;
+    font-weight: 400;
+    height: 40px;
+    width: 484px;
+
+    .divider-line {
+        border: solid 2px #9747FF;
+        width: 100px;
+        border-top-right-radius: 5px;
+        border-bottom-right-radius: 5px;
+    }
+
+    img {
+        width: 30px;
+        height: 30px;
+        transition: transform 0.2s;
+
+        &:hover {
+            transform: scale(1.3);
+        }
+    }
+}
+
+.scroll-container {
+    display: flex;
+    align-items: center;
+    position: absolute;
+    right: 34px;
+    bottom: -15px;
+    z-index: 5;
+    gap: 42px;
+    font-size: 23px;
+    font-weight: 400;
+    rotate: 90deg;
+
+    img {
+        rotate: -90deg;
+    }
 }

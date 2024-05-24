@@ -28,9 +28,20 @@ body {
     font-family: 'Poppins';
     background-color: $background;
     color: $primary-font-color;
+    overflow: hidden;
+    box-sizing: border-box;
+    display: flex;
+    flex-direction: column;
+    justify-self: flex-start;
+    align-items: center;
 
     a {
         text-decoration: none;
         color: $primary-font-color;
     }
+}
+
+main-content {
+    max-width: 1440px;
+    margin: 0 auto;
 }
