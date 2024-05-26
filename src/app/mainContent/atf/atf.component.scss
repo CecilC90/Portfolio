@@ -9,7 +9,9 @@
     padding-left: 47px;
     padding-right: 100px;
     width: 1440px;
-    //overflow: hidden;
+    max-width: 100%;
+    overflow: hidden;
+    padding-bottom: 122px;
 }
 
 .test {
@@ -22,8 +24,6 @@
     left: 0;
     top: 264px;
     z-index: 2;
-
-
 }
 
 .head-container {
@@ -94,12 +94,18 @@
     }
 }
 
+.bottom-container {
+    position: relative;
+    height: 120px;
+    width: 1440px;
+}
+
 .social-links-container {
     display: flex;
     align-items: center;
     position: absolute;
-    left: 0;
-    bottom: -72px;
+    left: 26px;
+    bottom: 52px;
     z-index: 5;
     gap: 42px;
     font-size: 23px;
@@ -129,8 +135,8 @@
     display: flex;
     align-items: center;
     position: absolute;
-    right: 34px;
-    bottom: -15px;
+    right: 9px;
+    bottom: 124px;
     z-index: 5;
     gap: 42px;
     font-size: 23px;

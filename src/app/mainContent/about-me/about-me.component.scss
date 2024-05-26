@@ -1,0 +1,71 @@
+@import './../../../styles.scss';
+
+
+.about-me-container {
+    margin-top: -32px;
+    position: relative;
+    display: flex;
+    align-items: flex-end;
+    padding-left: 100px;
+    gap: 149px;
+    padding-bottom: 278px;
+    background-color: transparent;
+}
+
+.text-container {
+    display: flex;
+    flex-direction: column;
+    max-width: 471px;
+    gap: 35px;
+}
+
+h1 {
+    font-size: 90px;
+    font-weight: 700;
+    background-color: transparent;
+}
+
+.picture-container {
+    display: flex;
+    align-items: center;
+    height: 509px;
+    width: 509px;
+
+    img {
+        height: 453px;
+        width: 453px;
+    }
+
+    hr {
+        position: absolute;
+        display: flex;
+        width: 267px;
+        height: 4px;
+        background-color: $hover-link-color;
+        border: none;
+        z-index: 6;
+    }
+}
+
+.personal-details {
+    display: flex;
+    gap: 35px;
+    font-size: 16px;
+    font-weight: 400;
+
+    img {
+        transition: transform 0.2s;
+
+        &:hover {
+            transform: scale(1.2);
+
+        }
+    }
+}
+
+.purple-shadow {
+    position: absolute;
+    top: -223px;
+    right: 0;
+    z-index: 4;
+}
