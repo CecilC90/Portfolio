@@ -1,8 +1,10 @@
 $background-color: #141D2F;
 $second-background-color: #1B2539;
+$purple-background-color: #9747FF;
 $primary-font-color: #FFFFFF;
 $hover-link-color: #70E61C;
 $button-font-size: 23px;
+$error-color: #E61C40;
 
 
 
@@ -39,6 +41,7 @@ body {
     flex-direction: column;
     justify-self: flex-start;
     align-items: center;
+    
 
     a {
         text-decoration: none;

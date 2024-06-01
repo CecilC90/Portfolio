@@ -1,1 +1,28 @@
-<p>my-skills works!</p>
+<div class="my-skills-container">
+    <img class="green-shadow" src="../../../assets/img/Green shadow 2.svg" alt="">
+    <div class="icon-container">
+        @for (icon of icons; track $index) {
+        <div class="icon">
+            <img src="/assets/img/{{icon}}_icon.svg">
+            <span>{{ icon }}</span>
+        </div>
+        }
+    </div>
+    <div class="skill-contanier">
+        <div class="text-container">
+            <div class="header-skills">
+                <h1>My skills</h1>
+                <span></span>
+            </div>
+            <div class="text-skill">
+                <p>I have gained experience in building projects with varios front end technologies and concepts.</p>
+            </div>
+        </div>
+        <div class="button-container">
+            <a class="main-button" href="*">Get in touch</a>
+        </div>
+    </div>
+    <div class="linie">
+        <hr>
+    </div>
+</div>

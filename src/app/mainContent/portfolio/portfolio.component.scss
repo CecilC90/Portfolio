@@ -1,0 +1,146 @@
+@import './../../../styles.scss';
+@import './../about-me/about-me.component.scss';
+@import './../atf/atf.component.scss';
+
+
+.headline-container {
+    display: flex;
+    justify-content: flex-end;
+    align-items: center;
+    width: 100%;
+    box-sizing: border-box;
+
+    h1 {
+        padding-left: 36px;
+        padding-right: 42px;
+    }
+
+    .line {
+        height: 4px;
+        background-color: #9747FF;
+        border: none;
+    }
+
+    .right {
+        width: 484px;
+
+    }
+
+    .left {
+        width: 109px;
+    }
+}
+
+.projects-container {
+    padding: 116px 100px;
+}
+
+.left-container {
+    box-sizing: border-box;
+    display: flex;
+    justify-content: center;
+    align-items: flex-end;
+    width: 620px;
+    height: 339px;
+    z-index: 5;
+    
+
+    img {
+        height: 100%;
+        margin-bottom: -40px;
+    }
+
+}
+
+.description {
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    padding-top: 35px;
+}
+
+.project-box {
+    position: relative;
+    display: flex;
+    align-items: flex-end;
+    gap: 35px;
+    z-index: 6;
+}
+
+.project-description {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    gap: 15px;
+    max-width: 513px;
+}
+
+h3 {
+    font-size: 32px;
+    font-weight: 700;
+    color: #9747FF;
+}
+
+h4 {
+    font-size: 23px;
+    font-weight: 400;
+    color: #70E61C;
+}
+
+.button-container {
+    display: flex;
+    padding-top: 35px;
+    gap: 86px;
+}
+
+.test-button {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    box-sizing: border-box;
+    color: $primary-font-color;
+    font-size: $button-font-size;
+    padding: 15px 30px;
+    border-radius: 10px;
+    background-color: $purple-background-color;
+    transition: all 100ms ease-in-out;
+    max-height: 58px;
+
+    &:hover {
+        background-color: #70E61C;
+
+
+    }
+}
+
+.git-button {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    box-sizing: border-box;
+    color: $primary-font-color;
+    font-size: $button-font-size;
+    padding: 13px 30px;
+    border-radius: 10px;
+    border: solid 1px $hover-link-color;
+    background-color: transparent;
+    transition: all 100ms ease-in-out;
+    max-height: 64px;
+
+    &:hover {
+        background-color: $hover-link-color;
+
+    }
+}
+
+.purple-shadow {
+    position: absolute;
+    top: 44px;
+    left: 0;
+}
+
+.green-shadow {
+    position: absolute;
+    bottom: 0;
+    right: 0;
+}

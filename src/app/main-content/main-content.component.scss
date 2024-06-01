@@ -11,10 +11,27 @@ app-header {
     z-index: 99;
 }
 
-about-me {
-    //width: 1440px;
+app-about-me {
+    position: relative;
+    display: flex;
+    width: 1440px;
     margin-top: -30px;
-    //z-index: 50;
+    z-index: 50;
 }
+
+app-my-skills {
+    display: flex;
+    width: 1440px;
+}
+
+app-portfolio {
+    display: flex;
+    flex-direction: column;
+    max-width: 1440px;
+    position: relative;
+    //z-index: 1;
+}
+
+
 
 

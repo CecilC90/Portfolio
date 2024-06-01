@@ -9,4 +9,7 @@ import { Component } from '@angular/core';
 })
 export class MySkillsComponent {
 
+icons = ['Angular', 'TypeScript', 'JavaScript', 'HTML', 'Firebase', 'GIT', 'CSS', 'Rest-Api', 'Scrum', 'Material Design'];
+
+
 }
