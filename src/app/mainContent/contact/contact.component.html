@@ -2,9 +2,10 @@
     <span class="line"></span>
     <h1>Contact</h1>
 </div>
+<img class="purple_shadow" src="../../../assets/img/purple_shadow 4.svg" alt="">
 <div class="main-container">
     <div class="text-container">
-        <h3>Got a promlem to solve?</h3>
+        <h3>Got a problem to solve?</h3>
         <p>Contact me through this form, I am interested in hearing from you, knowing your ideas and contributiong to
             your projects with my work.</p>
         <p>Need a Frontend developer? <span>Contact me!</span></p>
@@ -14,13 +15,14 @@
             <div class="input-container">
                 @if (name.valid) {
                 <label for="name"><img class="input-icon" src="./../../../assets/img/valid_icon.svg" alt=""></label>
-                }  @else if(!name.valid && name.touched) {
-                    <label for="message"><img class="input-icon" src="./../../../assets/img/invalid_icon.svg" alt=""></label>
+                } @else if(!name.valid && name.touched) {
+                <label for="message"><img class="input-icon" src="./../../../assets/img/invalid_icon.svg"
+                        alt=""></label>
                 }
 
                 <input #name="ngModel" [(ngModel)]="contactData.name" type="text" id="fname" name="name"
                     placeholder="Your name" required [ngClass]="{
-                    'input-error': !name.valid && (name.touched || name.dirty), 
+                    'input-error': !name.valid && (name.touched || name.dirty),
                     'input-valid': name.valid && name.touched
                 }">
                 <div class="error-container">
@@ -32,11 +34,12 @@
             <div class="input-container">
                 @if (email.valid) {
                 <label for="email"><img class="input-icon" src="./../../../assets/img/valid_icon.svg" alt=""></label>
-                }  @else if(!email.valid && email.touched) {
-                    <label for="message"><img class="input-icon" src="./../../../assets/img/invalid_icon.svg" alt=""></label>
+                } @else if(!email.valid && email.touched) {
+                <label for="message"><img class="input-icon" src="./../../../assets/img/invalid_icon.svg"
+                        alt=""></label>
                 }
                 <input #email="ngModel" [(ngModel)]="contactData.email" type="email" id="email" name="email"
-                    placeholder="Your email." required pattern="[a-zA-Z0-9._%+-]+@[a-zA-Z0-9.-]+\.[a-zA-Z]{2,}"
+                    placeholder="Your email." required pattern="[a-zA-Z0-9._%+\-]+@[a-zA-Z0-9.\-]+.[a-zA-Z]{2,}"
                     [ngClass]="{
                     'input-error': !email.valid && (email.touched || email.dirty),
                     'input-valid': email.valid && email.touched
@@ -51,7 +54,8 @@
                 @if (message.valid ) {
                 <label for="message"><img class="input-icon" src="./../../../assets/img/valid_icon.svg" alt=""></label>
                 } @else if(!message.valid && message.touched) {
-                    <label for="message"><img class="input-icon" src="./../../../assets/img/invalid_icon.svg" alt=""></label>
+                <label for="message"><img class="input-icon" src="./../../../assets/img/invalid_icon.svg"
+                        alt=""></label>
                 }
                 <textarea #message="ngModel" [(ngModel)]="contactData.message" id="subject" name="subject"
                     placeholder="Your message" style="height:200px" required [ngClass]="{
@@ -65,12 +69,36 @@
                 </div>
             </div>
             <div class="police-container">
-                <div class="checkbox"><img src="../../../assets/img/check_box_outline_blank.svg" alt=""></div>
-                <p>I've read the <a href="">privacy police </a>and agree to the processing of my data as outlined.</p>
+                <div class="checkbox-container">
+                    <div class="checkbox">
+                        <input #privacy="ngModel" [(ngModel)]="contactData.privacy" name="check_box" id="checkbox"
+                            type="checkbox" class="custom-checkbox" [checked]="isChecked"
+                            (change)="toggleCheckbox($event)" required>
+                        @if (isChecked) {
+                        <span class="checkmark">
+                            <img src="../../../assets/img/check_box.svg" alt="">
+                        </span>
+                        } @else {
+                        <span class="checkmark">
+                            <img src="../../../assets/img/check_box_outline_blank.svg" alt="">
+                        </span>
+                        }
+                    </div>
+                    <p>I've read the <a href="">privacy police </a>and agree to the processing of my data as outlined.
+                    </p>
+                </div>
+                <div class="error-container">
+                    @if (!privacy.valid && privacy.touched) {
+                    <span class="error-message">Please accept the privacy policy.</span>
+                    }
+                </div>
             </div>
             <div class="message-container">
-                <input type="submit" value="message me" class="message-button">
+                <input type="submit" value="message me" class="message-button" [disabled]="!contactForm.valid">
             </div>
         </form>
     </div>
 </div>
+<a class="go-up-button" href="#head">
+    <img src="../../../assets/img/Go_up_button.svg" alt="">
+</a>

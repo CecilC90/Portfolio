@@ -19,9 +19,14 @@
     padding: 0px 100px;
     display: flex;
     justify-content: space-between;
+    padding-bottom: 180px;
 
     .text-container span {
         font-weight: 700;
+    }
+
+    h3 {
+        font-size: 32px;
     }
 }
 
@@ -106,17 +111,17 @@
 }
 
 .input-error {
-    border: solid 1px #E61C40!important;
+    border: solid 1px #E61C40 !important;
 }
 
 .input-valid {
-    border: solid 1px #70E61C!important;
+    border: solid 1px #70E61C !important;
 }
 
 :-webkit-autofill {
     transition: background-color 5000s ease-in-out 0s;
     -webkit-text-fill-color: white !important;
-   
+
 }
 
 input:-internal-autofill-previewed {
@@ -128,15 +133,14 @@ input:-internal-autofill-previewed {
 
 .police-container {
     display: flex;
-    //align-items: center;
-    gap: 20px;
-    padding-bottom: 37px;
+    flex-direction: column;
+    padding-bottom: 12px;
+    width: 100%;
 
     .checkbox {
+        position: relative;
         margin-bottom: 0
     }
-
-    ;
 
     a {
         color: $purple-background-color;
@@ -147,17 +151,28 @@ input:-internal-autofill-previewed {
     }
 }
 
-.checkbox {
+.checkbox-container {
+    display: flex;
+    gap: 20px;
+    align-items: center;
+}
+
+.custom-checkbox {
+    position: absolute;
+    opacity: 0;
+    cursor: pointer;
+    height: 24px;
+    width: 0;
+
+}
+
+.checkmark {
     height: 24px;
     width: 24px;
     display: flex;
     justify-content: center;
     align-items: center;
 
-    &:hover {
-        background-color: #797EF3;
-        border-radius: 50%;
-    }
 
     img {
         height: 16px;
@@ -166,12 +181,49 @@ input:-internal-autofill-previewed {
     }
 }
 
+.checkbox input.custom-checkbox:hover+.checkmark {
+    background-color: #797EF3;
+    border-radius: 50%;
+}
+
+
 .message-container {
     display: flex;
     justify-content: center;
 }
 
 .message-button {
+    background-color: #70E61C !important;
     max-width: 253px;
     padding: 15px 30px;
+    border: none !important;
+
+    &:hover {
+        background-color: $purple-background-color !important;
+        transition: all 100ms ease-in-out;
+        transform: scale(1.1);
+    }
+
+    &:disabled {
+        background-color: #B6B6B6 !important;
+        cursor: unset !important;
+        transform: none;
+    }
+}
+
+.go-up-button {
+    position: absolute;
+    bottom: 90px;
+    right: 98px;
+
+    &:hover {
+        cursor: pointer;
+        filter: brightness(0) saturate(100%) invert(87%) sepia(91%) saturate(671%)
+                hue-rotate(33deg) brightness(93%) contrast(94%);
+    }
+}
+
+.purple_shadow {
+    position: absolute;
+    bottom: -270px;
 }

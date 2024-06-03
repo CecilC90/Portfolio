@@ -7,11 +7,13 @@ import { FormsModule, NgForm } from '@angular/forms';
 @Component({
   selector: 'app-contact',
   standalone: true,
-  imports: [FormsModule,NgClass],
+  imports: [FormsModule, NgClass ],
   templateUrl: './contact.component.html',
   styleUrl: './contact.component.scss'
 })
 export class ContactComponent {
+
+  public isChecked = false;
 
   http = inject(HttpClient);
 
@@ -35,12 +37,19 @@ export class ContactComponent {
     },
   };
 
+  toggleCheckbox(event: Event): void {
+    this.isChecked = (event.target as HTMLInputElement).checked;
+    this.contactData.privacy = this.isChecked;
+    console.log(this.contactData);
+  }
+
   onSubmit(ngForm: NgForm) {
+    console.log('test');
     if (ngForm.submitted && ngForm.form.valid && !this.mailTest) {
       this.http.post(this.post.endPoint, this.post.body(this.contactData))
         .subscribe({
           next: (response) => {
-
+            
             ngForm.resetForm();
           },
           error: (error) => {
