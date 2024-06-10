@@ -1,0 +1,57 @@
+@import './../../../../styles.scss';
+
+.footer-container {
+    padding: 0px 100px;
+    border-top: 4px solid $hover-link-color;
+    height: 291px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+
+    h1 {
+        font-size: 40px;
+    }
+
+    span {
+        font-size: 23px;
+    }
+}
+
+.main {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    width: 100%;
+
+}
+
+.icon-container {
+    display: flex;
+    gap: 42px;
+
+    a {
+        width: 30px;
+
+        &:hover {
+            transition: all 100ms ease-in-out;
+            scale: (1.2);
+        }
+    }
+}
+
+a {
+    font-size: 16px;
+    font-weight: 400;
+    max-width: fit-content;
+
+    &:hover + .underline {
+        opacity: 1;
+    }
+}
+
+.underline {
+    opacity: 0;
+    width: 55.5px;
+    height: 3px;
+    background-color: #1CDAE6;
+} 

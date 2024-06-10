@@ -1,8 +1,14 @@
-<header>
+<header >
     <div class="name">Cecil</div>
     <div class="menu">
-        <a href="#">About me</a>
+        <a href="#">{{ 'header.about' | translate }}</a>
         <a href="#">Skills</a>
         <a href="#">Portfolio</a>
+        <div class="language-container">
+            @for (language of languages; track language) {
+            <button (click)="changeLanguage(language)" [ngClass]="{'active': isActiveLang(language)}">{{language |
+                uppercase}}</button>
+            }
+        </div>
     </div>
 </header>

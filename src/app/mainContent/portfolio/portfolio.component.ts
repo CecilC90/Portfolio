@@ -1,21 +1,27 @@
-import { Component } from '@angular/core';
+import { Component, OnInit, inject } from '@angular/core';
 import { CommonModule } from '@angular/common';
+import { TranslateService, TranslateModule } from '@ngx-translate/core';
 
 @Component({
   selector: 'app-portfolio',
   standalone: true,
-  imports: [CommonModule],
+  imports: [CommonModule, TranslateModule],
   templateUrl: './portfolio.component.html',
   styleUrl: './portfolio.component.scss'
 })
-export class PortfolioComponent {
+export class PortfolioComponent implements OnInit {
+  private translateService = inject(TranslateService); 
 
+  ngOnInit(): void {
+    const defaultLang = localStorage.getItem('language') || 'en';
+    this.translateService.use(defaultLang);
+  }
 
   projects = [
     {
       projectName: 'Join',
       projectTechnologie: 'HMTL | CSS | JavaScript',
-      projectDescription: 'Task manager inspired by the Kanban System. Create and organize tasks using drag and drop functions, assign users and categories.',
+      projectDescription: 'portfolio.joinText',
       projectLink: '',
       projectGitHub: '',
       projectImg: 'join'
@@ -24,12 +30,16 @@ export class PortfolioComponent {
     {
       projectName: 'El Pollo Loco',
       projectTechnologie: 'HMTL | CSS | JavaScript',
-      projectDescription: 'A simple Jump-and-run game based on an object-oriented approach. Help Pepe to find coins and salsa bottles to fight against the chicken.',
+      projectDescription: 'portfolio.PolloLocoText',
       projectLink: '',
       projectGitHub: '',
       projectImg: 'pollo_loco'
       
     }
   ]
-
+  translateProjectDescriptions() {
+    this.projects.forEach(project => {
+      project.projectDescription = this.translateService.instant(project.projectDescription);
+    });
+  }
 }

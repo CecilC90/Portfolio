@@ -33,9 +33,17 @@ app-portfolio {
 }
 
 app-contact {
-    position: absolute;
+    display: flex;
+    flex-direction: column;
+    position: relative;
     overflow: hidden;
-    width: 1440px;
+    max-width: 1440px;
+}
+
+app-footer {
+    max-width: 1440px;
+    
+    
 }
 
 

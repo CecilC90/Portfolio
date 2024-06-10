@@ -1,0 +1,45 @@
+{
+    "header": {
+        "about": "About me",
+        "skills": "Skills",
+        "Portfolio": "Portfolio"
+    },
+    "atf": {
+        "talk": "let's talk!",
+        "scroll": "Scroll down"
+    },
+    "about-me": {
+        "headline": "About me",
+        "welcome": "Hi, I am a Front-end developer based in Bad Blumau, Austria. Thank you for visiting my website, where you can get an insight into my work and my passion for design and development. I am happy to introduce you to my projects and share more about my skills and experience.",
+        "firstText": "Programming is a passion for me. It gives me the opportunity to develop innovative solutions through logic and creativity and to turn them into reality. The challenge of designing complex systems, solving problems and constantly learning new technologies enriches me.",
+        "secondText": "With in-depth knowledge of various programming languages and frameworks and strong problem-solving skills, I am able to tackle complex challenges and develop innovative solutions. "
+    },
+    "my-skills": {
+        "headline": "My skills",
+        "text": "I have gained experience in building projects with varios front end technologies and concepts.",
+        "button": "Get in touch"
+    },
+    "portfolio": {
+        "text": "Explore a selection of my work here - Interact with projects to see my skills in action.",
+        "joinText": "Task manager inspired by the Kanban System. Create and organize tasks using drag and drop functions, assign users and categories.",
+        "PolloLocoText": "A simple Jump-and-run game based on an object-oriented approach. Help Pepe to find coins and salsa bottles to fight against the chicken."
+    },
+    "contact": {
+        "headline": "Contact",
+        "solve": "Got a problem to solve?",
+        "contactMe": "Contact me through this form, I am interested in hearing from you, knowing your ideas and contributiong to your projects with my work.",
+        "need": "Need a Frontend developer?",
+        "me": "Contact me!",
+        "inputName": "Your name",
+        "inputNameErr": "Your name is required",
+        "inputMail": "Your email",
+        "inputMailErr": "Your email is required",
+        "textarea": "Your message",
+        "textareaErr": "Your message is empty",
+        "privacyPolice1": "I've read the",
+        "privacyPoliceLink": "privacy police",
+        "privacyPolice2": "and agree to the processing of my data as outlined",
+        "privacyPoliceErr": "Please accept the privacy policy.",
+        "button": "message me"
+    }
+}

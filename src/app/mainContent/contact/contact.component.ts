@@ -1,17 +1,28 @@
 import { NgClass } from '@angular/common';
 import { HttpClient } from '@angular/common/http';
-import { Component, inject } from '@angular/core';
+import { Component, OnInit, inject } from '@angular/core';
 import { FormsModule, NgForm } from '@angular/forms';
+import { TranslateService, TranslateModule } from '@ngx-translate/core';
 
 
 @Component({
   selector: 'app-contact',
   standalone: true,
-  imports: [FormsModule, NgClass ],
+  imports: [
+    FormsModule,
+    NgClass,
+    TranslateModule
+  ],
   templateUrl: './contact.component.html',
   styleUrl: './contact.component.scss'
 })
-export class ContactComponent {
+export class ContactComponent implements OnInit {
+  private translateService = inject(TranslateService);
+
+  ngOnInit(): void {
+    const defaultLang = localStorage.getItem('language') || 'en';
+    this.translateService.use(defaultLang);
+  }
 
   public isChecked = false;
 
@@ -49,7 +60,7 @@ export class ContactComponent {
       this.http.post(this.post.endPoint, this.post.body(this.contactData))
         .subscribe({
           next: (response) => {
-            
+
             ngForm.resetForm();
           },
           error: (error) => {

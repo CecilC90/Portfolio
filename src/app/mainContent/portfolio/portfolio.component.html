@@ -1,4 +1,4 @@
-<div class="headline-container">
+<div class="headline-container" data-aos="fade-left">
     <span>
         <hr class="line left">
     </span>
@@ -9,12 +9,12 @@
 </div>
 <div class="description">
     <p>
-        Explore a selection of my work here - Interact with projects to see my skills in action.
+        {{ 'portfolio.text' | translate}}
     </p>
 </div>
 <div class="projects-container">
     @for (project of projects; track $index) {
-    <div class="project-box" [ngStyle]="{ 'flex-direction': $index % 2 === 0 ? 'row' : 'row-reverse' }">
+    <div data-aos="flip-up" class="project-box" [ngStyle]="{ 'flex-direction': $index % 2 === 0 ? 'row' : 'row-reverse' }">
         <div class="left-container" >
             <img src="../../../assets/img/projects/{{ project.projectImg }}.svg" alt="">
         </div>
@@ -23,7 +23,7 @@
                 <div class="project-description" [ngStyle]="{ 'align-items': $index % 2 === 0 ? 'flex-start' : 'flex-end' }">
                     <h3>{{ project.projectName }}</h3>
                     <h4>{{ project.projectTechnologie }}</h4>
-                    <p [ngStyle]="{ 'text-align': $index % 2 === 0 ? 'start' : 'end' }">{{ project.projectDescription }}</p>
+                    <p [ngStyle]="{ 'text-align': $index % 2 === 0 ? 'start' : 'end' }">{{ project.projectDescription | translate }}</p>
                 </div>
                 <div class="button-container" [ngStyle]="{ 'justify-content': $index % 2 === 0 ? 'start' : 'end' }">
                     <a class="test-button" href="">Live test</a>

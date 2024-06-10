@@ -27,6 +27,7 @@
 
     h3 {
         font-size: 32px;
+        text-wrap: nowrap;
     }
 }
 
@@ -223,7 +224,7 @@ input:-internal-autofill-previewed {
     }
 }
 
-.purple_shadow {
+.purple_shadow_2 {
     position: absolute;
     bottom: -270px;
 }

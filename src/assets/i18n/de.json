@@ -1,0 +1,49 @@
+{
+    "header": {
+        "about": "Über mich",
+        "skills": "Skills",
+        "Portfolio": "Portfolio"
+        
+    },
+    "atf": {
+        "talk": "lass uns reden!",
+        "scroll": "herunterscrollen"
+    },
+    "about-me": {
+        "headline": "Über mich",
+        "welcome": "Hallo, ich bin ein Front-End-Entwickler mit Sitz in Bad Blumau, Österreich. Schön, dass Sie meine Seite besuchen.Hier können Sie einen Einblick in meine Arbeit und meine Leidenschaft für Design und Entwicklung erhalten. Ich freue mich, Ihnen meine Projekte vorzustellen und mehr über meine Fähigkeiten und Erfahrungen zu teilen.",
+        "firstText": "Programmieren ist für mich eine Leidenschaft. Es bietet mir die Chance, durch Logik und Kreativität innovative Lösungen zu entwickeln und in die Realität umzusetzen. Die Herausforderung, komplexe Systeme zu entwerfen, Probleme zu lösen und ständig neue Technologien zu erlernen, bereichert mich.",
+        "secondText": "Mit fundierten Kenntnissen in verschiedenen Programmiersprachen und -frameworks sowie einer starken Problemlösungskompetenz bin ich in der Lage, komplexe Herausforderungen zu bewältigen und innovative Lösungen zu entwickeln. "
+    },
+    "my-skills": {
+        "headline": "Skills",
+        "text": "Ich habe Erfahrung in der Erstellung von Projekten mit verschiedenen Frontend-Technologien und Konzepten gesammelt.",
+        "button": "Kontakt aufnehmen"
+    },
+    "portfolio": {
+        "text": "Entdecken Sie hier eine Auswahl meiner Arbeiten - Interagieren Sie mit Projekten, um meine Fähigkeiten in Aktion zu sehen.",
+        "joinText": "Aufgabenmanager nach dem Vorbild des Kanban-Systems. Erstellen und organisieren Sie Aufgaben mit Hilfe von Drag-and-Drop-Funktionen, weisen Sie Benutzer und Kategorien zu.",
+        "PolloLocoText": "Ein einfaches Jump-and-Run-Spiel, das auf einem objektorientierten Ansatz basiert. Hilf Pepe, Münzen und Salsaflaschen zu finden, um gegen das Huhn zu kämpfen."
+    },
+    "contact": {
+        "headline": "Kontakt",
+        "solve": "Haben Sie ein Problem zu lösen?",
+        "contactMe": "Kontaktieren Sie mich über dieses Formular, ich bin daran interessiert, von Ihnen zu hören, Ihre Ideen zu kennen und mit meiner Arbeit zu Ihren Projekten beizutragen.",
+        "need": "Brauchen Sie einen Frontend-Entwickler?",
+        "me": "Kontaktieren sie mich!",
+        "inputName": "Ihr Name",
+        "inputNameErr": "Ihr Name ist erforderlich",
+        "inputMail": "Ihre E-Mail",
+        "inputMailErr": "Your email is required",
+        "textarea": "Ihre Nachricht",
+        "textareaErr": "Ihre Nachricht ist leer",
+        "privacyPolice1": "Ich habe die",
+        "privacyPoliceLink": "Datenschutzbestimmungen",
+        "privacyPolice2": "und erkläre mich mit der Verarbeitung meiner Daten wie beschrieben einverstanden",
+        "privacyPoliceErr": "Bitte akzeptieren Sie die Datenschutzbestimmungen",
+        "button": "Nachricht senden"
+    }
+
+
+
+}
