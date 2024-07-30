@@ -9,11 +9,13 @@
     align-items: center;
     width: 100%;
     box-sizing: border-box;
+    gap: 32px;
 
-    h1 {
-        padding-left: 36px;
-        padding-right: 42px;
+    @media (max-width: 580px) {
+        gap: 8px;
     }
+
+    h1 {}
 
     .line {
         height: 4px;
@@ -21,18 +23,39 @@
         border: none;
     }
 
-    .right {
-        width: 484px;
+    .line-box {
+        display: flex;
+        flex-grow: 1;
+        justify-content: flex-end;
+    }
 
+    .right {
+        flex-grow: 1;
     }
 
     .left {
         width: 109px;
+
+        @media (max-width: 1000px) {
+            width: 54px;
+        }
+
+        @media (max-width: 580px) {
+            width: 20px;
+        }
     }
 }
 
 .projects-container {
     padding: 116px 100px;
+
+    @media (max-width: 1220px) {
+        padding: 116px 25px;
+    }
+
+    @media (max-width: 580px) {
+        padding: 35px 25px;
+    }
 }
 
 .left-container {
@@ -43,11 +66,14 @@
     width: 620px;
     height: 339px;
     z-index: 5;
-    
 
     img {
         height: 100%;
         margin-bottom: -40px;
+
+        @media (max-width: 1220px) {
+            margin-bottom: -0;
+        }
     }
 
 }
@@ -57,6 +83,14 @@
     display: flex;
     justify-content: center;
     padding-top: 35px;
+
+
+    p {
+        @media (max-width: 750px) {
+            padding: 0 25px;
+            text-align: center;
+        }
+    }
 }
 
 .project-box {
@@ -65,6 +99,16 @@
     align-items: flex-end;
     gap: 35px;
     z-index: 6;
+
+    @media (max-width: 1220px) {
+
+        align-items: center;
+    }
+
+    @media (max-width: 1000px) {
+        flex-direction: column !important;
+        align-items: center;
+    }
 }
 
 .project-description {
@@ -73,6 +117,16 @@
     align-items: flex-start;
     gap: 15px;
     max-width: 513px;
+
+    @media (max-width: 1000px) {
+        align-items: center !important;
+    }
+
+    p {
+        @media (max-width: 580px) {
+            text-align: center !important;
+        }
+    }
 }
 
 h3 {
@@ -91,6 +145,10 @@ h4 {
     display: flex;
     padding-top: 35px;
     gap: 86px;
+
+    @media (max-width: 1000px) {
+        justify-content: center !important;
+    }
 }
 
 .test-button {
@@ -137,6 +195,17 @@ h4 {
     position: absolute;
     top: 44px;
     left: 0;
+
+    @media (max-width: 1000px) {
+        top: -8px;
+        left: -4px;
+        height: 800px;
+    }
+
+    @media (max-width: 580px) {
+        height: 600px;
+        top: 44px;
+    }
 }
 
 .green-shadow {

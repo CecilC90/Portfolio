@@ -8,6 +8,11 @@ header {
     padding: 37px 100px;
     background-color: $background-color;
 
+    @media (max-width: 950px) {
+        padding: 37px 25px;
+    }
+
+
     button {
         background: none;
         color: inherit;
@@ -32,6 +37,11 @@ button.active {
     font-size: 32px;
     font-weight: 700;
     cursor: pointer;
+
+    @media (max-width:800px) {
+        font-size: 22px;
+    }
+
 }
 
 .menu {
@@ -43,5 +53,9 @@ button.active {
     a:hover {
         color: $hover-link-color;
         cursor: pointer;
+    }
+
+    @media (max-width:800px) {
+        display: none;
     }
 }

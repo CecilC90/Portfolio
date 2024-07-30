@@ -8,54 +8,59 @@ $error-color: #E61C40;
 
 
 
-  /* poppins-regular - latin */
-  @font-face {
-    font-display: swap; /* Check https://developer.mozilla.org/en-US/docs/Web/CSS/@font-face/font-display for other options. */
-    font-family: 'Poppins';
-    font-style: normal;
-    font-weight: 400;
-    src: url('assets/fonts/poppins-v21-latin-regular.woff2') format('woff2'); /* Chrome 36+, Opera 23+, Firefox 39+, Safari 12+, iOS 10+ */
-  }
-  
-  /* poppins-700 - latin */
-  @font-face {
-    font-display: swap; /* Check https://developer.mozilla.org/en-US/docs/Web/CSS/@font-face/font-display for other options. */
-    font-family: 'Poppins';
-    font-style: normal;
-    font-weight: 700;
-    src: url('assets/fonts/poppins-v21-latin-700.woff2') format('woff2'); /* Chrome 36+, Opera 23+, Firefox 39+, Safari 12+, iOS 10+ */
-  }
+/* poppins-regular - latin */
+@font-face {
+  font-display: swap;
+  /* Check https://developer.mozilla.org/en-US/docs/Web/CSS/@font-face/font-display for other options. */
+  font-family: 'Poppins';
+  font-style: normal;
+  font-weight: 400;
+  src: url('assets/fonts/poppins-v21-latin-regular.woff2') format('woff2');
+  /* Chrome 36+, Opera 23+, Firefox 39+, Safari 12+, iOS 10+ */
+}
 
- * {
-    margin: 0;
- } 
+/* poppins-700 - latin */
+@font-face {
+  font-display: swap;
+  /* Check https://developer.mozilla.org/en-US/docs/Web/CSS/@font-face/font-display for other options. */
+  font-family: 'Poppins';
+  font-style: normal;
+  font-weight: 700;
+  src: url('assets/fonts/poppins-v21-latin-700.woff2') format('woff2');
+  /* Chrome 36+, Opera 23+, Firefox 39+, Safari 12+, iOS 10+ */
+}
 
- html {
+* {
+  margin: 0;
+}
+
+html {
   scroll-behavior: smooth;
 }
-  
-body {
-    margin: 0;
-    font-family: 'Poppins';
-    background-color: $background-color;
-    color: $primary-font-color;
-    overflow-x: hidden;
-    box-sizing: border-box;
-    display: flex;
-    flex-direction: column;
-    justify-self: flex-start;
-    align-items: center;
-    
 
-    a {
-        text-decoration: none;
-        color: $primary-font-color;
-    }
+body {
+  margin: 0;
+  font-family: 'Poppins';
+  background-color: $background-color;
+  color: $primary-font-color;
+  overflow-x: hidden;
+  box-sizing: border-box;
+  display: flex;
+  flex-direction: column;
+  
+  align-items: center;
+  width: 100%;
+
+  a {
+    text-decoration: none;
+    color: $primary-font-color;
+  }
 }
 
+app-root {
+  width: 1440px;
 
-
-
-
-
-
+  @media (max-width: 1440px) {
+    width: 100%;
+  }
+}

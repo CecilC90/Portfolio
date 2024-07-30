@@ -5,31 +5,57 @@
 .my-skills-container {
     position: relative;
     display: flex;
-    align-items: center;
+    //align-items: center;
+    justify-content: space-between;
     padding-left: 100px;
     width: 1440px;
     padding-bottom: 170px;
+    gap: 48px;
+
+    @media (max-width: 1220px) {
+        flex-direction: column-reverse;
+        width: 100%;
+        padding-left: 0;
+        padding-bottom: 67px;
+      }
+
+      @media (max-width: 1000px) {
+        align-items: center;
+      }
 }
 
 .skill-contanier {
     display: flex;
     flex-direction: column;
     gap: 57px;
+    align-items: center;
 
-  
+    @media (max-width: 1220px) {
+        align-items: flex-end;
+      }
+
+      @media (max-width: 1000px) {
+        width: 100%;
+        align-items: center;
+      }
+    
 }
 
 hr {
-    width: 58px;
+    //width: 58px;
     height: 4px;
     background-color: #9747FF;
     border: none;
 }
 
 .linie {
-    position: relative;
-    top: -98px;
-    right: -26px;
+    position: absolute;
+    right: 0px;
+    width: 58px;
+
+    @media (max-width: 1000px) {
+        opacity: 0;
+      }
 }
 
 .icon-container {
@@ -37,8 +63,18 @@ hr {
     max-width: 785px;
     flex-wrap: wrap;
     column-gap: 123px;
+    justify-content: center;
     row-gap: 35px;
     z-index: 1;
+
+    @media (max-width: 1220px) {
+        max-width: 100%;
+        padding-left: 100px;
+      }
+
+      @media (max-width: 1160px) {
+        padding-left: 0;
+      }
 }
 
 .icon {
@@ -78,18 +114,55 @@ hr {
     flex-direction: column;
     align-items: flex-end;
     gap: 34px;
+    padding-right: 100px;
+
+    @media (max-width: 1000px) {
+        padding-right: 0;
+        align-items: center;
+        max-width: 100%;
+        padding: 0 25px;
+      }
+}
+
+.header-skills {
+    display: flex;
+    align-items: center;
+    justify-content: flex-end;
 }
 
 .text-skill {
 
     p {
         text-align: end;
+
+        @media (max-width: 1000px) {
+            text-align: center;
+          }
     }
 }
 
 .button-container {
     display: flex;
     justify-content: center;
+
+    @media (max-width: 1220px) {
+        display: none;
+      }
+}
+
+.mobile-button-container {
+    display: none;
+    padding-bottom: 109px;
+
+    @media (max-width: 1220px) {
+        display: flex;
+        justify-content: center;
+        padding-left: 100px;
+      }
+
+      @media (max-width: 1000px) {
+        padding-left: 0;
+      }
 }
 
 .green-shadow {
