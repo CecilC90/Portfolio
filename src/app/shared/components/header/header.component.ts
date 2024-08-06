@@ -1,5 +1,5 @@
 import { CommonModule } from '@angular/common';
-import { Component, OnInit, inject,} from '@angular/core';
+import { Component, OnInit, inject, } from '@angular/core';
 import { TranslateService, TranslateModule } from '@ngx-translate/core';
 
 @Component({
@@ -10,11 +10,11 @@ import { TranslateService, TranslateModule } from '@ngx-translate/core';
   styleUrl: './header.component.scss'
 })
 
-export class HeaderComponent implements OnInit{
+export class HeaderComponent implements OnInit {
   languages = ['en', 'de'];
   private translateService = inject(TranslateService);
   defaultLange!: string;
-  
+
 
   ngOnInit(): void {
     this.defaultLange = localStorage.getItem('language') || 'en';
@@ -33,5 +33,14 @@ export class HeaderComponent implements OnInit{
 
   isActiveLang(lang: string): boolean {
     return this.defaultLange === lang;
+  }
+
+
+  toggleMenu() {
+    let navIcon = document.getElementById('burger-icon');
+    if (navIcon) {
+      navIcon.classList.toggle('open');
+      console.log("Menu toggled");
+    }
   }
 }

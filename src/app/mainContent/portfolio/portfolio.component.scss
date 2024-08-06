@@ -51,10 +51,17 @@
 
     @media (max-width: 1220px) {
         padding: 116px 25px;
+        
+    }
+
+    @media (max-width: 1000px) {
+        padding: 35px 25px;
+        padding-bottom: 77px;
     }
 
     @media (max-width: 580px) {
-        padding: 35px 25px;
+        padding: 35px 0px;
+        padding-bottom: 137px;
     }
 }
 
@@ -67,6 +74,11 @@
     height: 339px;
     z-index: 5;
 
+    @media (max-width: 580px) {
+        width: unset;
+        height: 213px;
+      }
+
     img {
         height: 100%;
         margin-bottom: -40px;
@@ -76,6 +88,13 @@
         }
     }
 
+}
+
+.right-container {
+
+    @media (max-width: 580px) {
+        padding: 0px 25px;
+    }
 }
 
 .description {
@@ -108,7 +127,9 @@
     @media (max-width: 1000px) {
         flex-direction: column !important;
         align-items: center;
+        width: 100%;
     }
+
 }
 
 .project-description {
@@ -139,6 +160,7 @@ h4 {
     font-size: 23px;
     font-weight: 400;
     color: #70E61C;
+    text-align: center;
 }
 
 .button-container {
@@ -148,6 +170,14 @@ h4 {
 
     @media (max-width: 1000px) {
         justify-content: center !important;
+    }
+
+    @media (max-width: 580px) {
+        gap: 50px;
+    }
+
+    @media (max-width: 380px) {
+        gap: 16px;
     }
 }
 
@@ -163,11 +193,15 @@ h4 {
     background-color: $purple-background-color;
     transition: all 100ms ease-in-out;
     max-height: 58px;
+    white-space: nowrap;
 
     &:hover {
         background-color: #70E61C;
 
+    }
 
+    @media (max-width: 350px) {
+        padding: 8px 16px;
     }
 }
 
@@ -189,6 +223,10 @@ h4 {
         background-color: $hover-link-color;
 
     }
+
+    @media (max-width: 350px) {
+        padding: 8px 16px;
+    }
 }
 
 .purple-shadow {
@@ -203,8 +241,13 @@ h4 {
     }
 
     @media (max-width: 580px) {
-        height: 600px;
+        height: 500px;
         top: 44px;
+    }
+
+    @media (max-width: 400px) {
+        height: 342px;
+        top: 150px;
     }
 }
 
@@ -212,4 +255,9 @@ h4 {
     position: absolute;
     bottom: 0;
     right: 0;
+
+    @media (max-width: 500px) {
+        bottom: 142px;
+        width: 193px;
+    }
 }

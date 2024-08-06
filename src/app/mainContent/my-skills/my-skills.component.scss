@@ -56,6 +56,13 @@ hr {
     @media (max-width: 1000px) {
         opacity: 0;
       }
+
+      @media (max-width: 500px) {
+        opacity: 1;
+        position: unset;
+        width: 20px;
+        padding-left: 6px;
+      }
 }
 
 .icon-container {
@@ -70,10 +77,15 @@ hr {
     @media (max-width: 1220px) {
         max-width: 100%;
         padding-left: 100px;
+        padding: 0 25px;
       }
 
       @media (max-width: 1160px) {
         padding-left: 0;
+      }
+
+      @media (max-width: 500px) {
+        column-gap: 56px;
       }
 }
 
@@ -122,6 +134,11 @@ hr {
         max-width: 100%;
         padding: 0 25px;
       }
+
+      @media (max-width: 500px) {
+        align-items: flex-end;
+        padding: 0;
+      }
 }
 
 .header-skills {
@@ -132,11 +149,20 @@ hr {
 
 .text-skill {
 
+    @media (max-width: 500px) {
+        align-items: flex-end;
+        padding: 0;
+      }
     p {
         text-align: end;
 
         @media (max-width: 1000px) {
             text-align: center;
+          }
+
+          @media (max-width: 500px) {
+            text-align: end;
+            padding: 0 25px;
           }
     }
 }

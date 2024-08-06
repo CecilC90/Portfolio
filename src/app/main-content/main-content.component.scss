@@ -55,6 +55,9 @@ app-portfolio {
     max-width: 1440px;
     position: relative;
     
+    @media (max-width: 1440px) {
+        width: 100%;
+      }
 
     @media (max-width: 1000px) {
         align-items: center;
