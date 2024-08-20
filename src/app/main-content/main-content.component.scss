@@ -9,16 +9,8 @@ app-atf {
 
     @media (max-width: 1440px) {
         width: 100%;
-      }
+    }
 
-}
-
-app-header {
-    position: sticky;
-    top: 0;
-    background-color: $background-color;
-    z-index: 99;
-    width: 100%;
 }
 
 app-about-me {
@@ -30,9 +22,8 @@ app-about-me {
 
     @media (max-width: 1440px) {
         width: 100%;
-      }
+    }
 
-      
 }
 
 app-my-skills {
@@ -41,12 +32,12 @@ app-my-skills {
 
     @media (max-width: 1440px) {
         width: 100%;
-      }
+    }
 
-      @media (max-width: 1220px) {
+    @media (max-width: 1220px) {
         flex-direction: column;
-      }
-    
+    }
+
 }
 
 app-portfolio {
@@ -54,10 +45,10 @@ app-portfolio {
     flex-direction: column;
     max-width: 1440px;
     position: relative;
-    
+
     @media (max-width: 1440px) {
         width: 100%;
-      }
+    }
 
     @media (max-width: 1000px) {
         align-items: center;
@@ -68,12 +59,6 @@ app-contact {
     display: flex;
     flex-direction: column;
     position: relative;
-    overflow: hidden;
     max-width: 1440px;
 }
 
-app-footer {
-    max-width: 1440px;
-
-
-}

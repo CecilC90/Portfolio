@@ -1,6 +1,8 @@
 @import './../../../../styles.scss';
 
 
+
+
 header {
     display: flex;
     justify-content: space-between;
@@ -63,6 +65,7 @@ button.active {
 #burger-icon {
     display: none;
     width: 30px;
+    height: 34px;
     -webkit-transform: rotate(0deg);
     -moz-transform: rotate(0deg);
     -o-transform: rotate(0deg);
@@ -78,7 +81,6 @@ button.active {
     }
   }
 
-  
   
   #burger-icon span {
     display: block;
@@ -140,4 +142,34 @@ button.active {
     -moz-transform: rotate(-45deg);
     -o-transform: rotate(-45deg);
     transform: rotate(-45deg);
+  }
+
+  .sidenav {
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+    align-items: center;
+    position: fixed;
+    height: 100vh;
+    width: 0;
+    background-color: #141D2F;
+    opacity: 90%;
+    overflow-x: hidden;
+    transition: 0.5s;
+    font-size: 23px;
+    gap: 33px;
+    inset: 108px 100% 0;
+    padding-top: 100px;
+
+    a:hover {
+      color: $hover-link-color;
+      cursor: pointer;
+  }
+  }
+
+  #sidenav.open {
+    width: 100%;
+    height: 100%;
+    inset: 108px 0 0;
+    overflow-y: hidden;
   }

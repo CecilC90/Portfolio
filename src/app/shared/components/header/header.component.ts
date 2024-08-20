@@ -1,6 +1,8 @@
 import { CommonModule } from '@angular/common';
+import { jsDocComment } from '@angular/compiler';
 import { Component, OnInit, inject, } from '@angular/core';
 import { TranslateService, TranslateModule } from '@ngx-translate/core';
+
 
 @Component({
   selector: 'app-header',
@@ -38,9 +40,20 @@ export class HeaderComponent implements OnInit {
 
   toggleMenu() {
     let navIcon = document.getElementById('burger-icon');
-    if (navIcon) {
+    let sidenav = document.getElementById('sidenav');
+    
+    
+    if (navIcon && sidenav) {
       navIcon.classList.toggle('open');
-      console.log("Menu toggled");
+      sidenav.classList.toggle('open');
+      
+      if (sidenav.classList.contains('open')) {
+        document.body.classList.add('no-scroll');
+      } else {
+        document.body.classList.remove('no-scroll');
+      }
+      
+
     }
   }
 }

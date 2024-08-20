@@ -1,0 +1,21 @@
+@import '../styles.scss';
+
+app-header {
+    position: sticky;
+    top: 0;
+    background-color: $background-color;
+    z-index: 99;
+    width: 100%;
+}
+
+app-footer {
+    max-width: 1440px;
+    position: relative;
+}
+
+app-imprint {
+    display: flex;
+    flex-direction: column;
+    position: relative;
+    max-width: 1440px;
+}

@@ -2,7 +2,8 @@
     "header": {
         "about": "About me",
         "skills": "Skills",
-        "Portfolio": "Portfolio"
+        "Portfolio": "Portfolio",
+        "contact": "Contact"
     },
     "atf": {
         "talk": "let's talk!",
@@ -41,5 +42,26 @@
         "privacyPolice2": "and agree to the processing of my data as outlined",
         "privacyPoliceErr": "Please accept the privacy policy.",
         "button": "message me"
+    },
+    "imprint": {
+        "info": "Information and Disclosure according to § 5 (1) ECG, § 25 MedienG, § 63 GewO, and § 14 UGB",
+        "operator": "Website Operator",
+        "adress": "Address",
+        "vat": "VAT Number",
+        "trade": "Trade Authority",
+        "member": "Memberships",
+        "contact": "Contact",
+        "phone": "Phone",
+        "mail": "Email",
+        "regulation": "Applicable Legal Regulations",
+        "title": "Professional Title",
+        "dispute": "Online Dispute Resolution",
+        "dispute-text": "Consumers residing in Austria or in another contracting state of the ODR Regulation have the possibility to resolve problems regarding the paid purchase of goods or services within the framework of online dispute resolution (according to OS, AStG). The European Commission provides a platform for this purpose: https: //ec.europa.eu/consumers/odr",
+        "copyright": "Copyright",
+        "copyright-text": "The contents of this website are subject, as far as legally possible, to various protective rights (e.g., copyright). Any use/distribution of provided material that is prohibited by copyright requires the written consent of the website operator",
+        "disclaimer": "Disclaimer",
+        "disclaimer-text": "Despite careful content control, the website operator of this website assumes no liability for the content of external links. The operators of the linked pages are solely responsible for their content. If you become aware of outgoing links that refer to a website with unlawful activity/information, please inform us accordingly to promptly remove them pursuant to § 17 Abs. 2 ECG",
+        "disclaimer-secondText": "The copyrights of third parties are carefully respected by the operator of this website. If you nevertheless become aware of a copyright infringement, please provide us with the corresponding notice. Upon becoming aware of such infringements, we will promptly remove the affected content",
+        "source": "Source"
     }
 }

@@ -5,6 +5,7 @@ import { MainContentComponent } from './main-content/main-content.component';
 import { TranslateModule, TranslateService } from '@ngx-translate/core';
 import AOS from 'aos';
 import 'aos/dist/aos.css';
+import { FooterComponent } from "./shared/components/footer/footer.component";
 
 
 
@@ -13,11 +14,11 @@ import 'aos/dist/aos.css';
   standalone: true,
   imports: [
     RouterOutlet,
-    HeaderComponent, 
-    MainContentComponent, 
+    HeaderComponent,
+    MainContentComponent,
     TranslateModule,
-    
-  ],
+    FooterComponent
+],
   templateUrl: './app.component.html',
   styleUrl: './app.component.scss'
 })

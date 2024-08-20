@@ -47,7 +47,6 @@ body {
   box-sizing: border-box;
   display: flex;
   flex-direction: column;
-  
   align-items: center;
   width: 100%;
 
@@ -63,4 +62,24 @@ app-root {
   @media (max-width: 1440px) {
     width: 100%;
   }
+}
+
+body.no-scroll {
+  overflow: hidden;
+}
+
+#skills {
+  scroll-margin-top: 122px; 
+}
+
+#portfolio {
+  scroll-margin-top: 122px; 
+}
+
+#about {
+  scroll-margin-top: 172px;
+}
+
+#contact {
+  scroll-margin-top: 122px;
 }
