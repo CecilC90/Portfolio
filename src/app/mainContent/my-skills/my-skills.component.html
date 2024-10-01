@@ -1,31 +1,38 @@
 <div class="my-skills-container">
-    <img class="green-shadow" src="../../../assets/img/Green shadow 2.svg" alt="">
-    <div class="icon-container" data-aos="zoom-in">
-        @for (icon of icons; track $index) {
-        <div class="icon">
-            <img src="/assets/img/{{icon}}_icon.svg">
-            <span>{{ icon }}</span>
-        </div>
-        }
+  <img
+    class="green-shadow"
+    src="../../../assets/img/Green shadow 2.svg"
+    alt=""
+  />
+  <div class="icon-container" data-aos="zoom-in">
+    @for (icon of icons; track $index) {
+    <div class="icon">
+      <img src="/assets/img/{{ icon }}_icon.svg" />
+      <span>{{ icon }}</span>
     </div>
-    <div class="skill-contanier"data-aos="fade-left">
-        <div class="text-container">
-            <div class="header-skills">
-                <h1 >{{'my-skills.headline' | translate}}</h1>
-                <div class="linie">
-                    <hr>
-                </div>
-                
-            </div>
-            <div class="text-skill">
-                <p>{{'my-skills.text' | translate }}</p>
-            </div>
+    }
+  </div>
+  <div class="skill-contanier" data-aos="fade-left">
+    <div class="text-container">
+      <div class="header-skills">
+        <h1>{{ "my-skills.headline" | translate }}</h1>
+        <div class="linie">
+          <hr />
         </div>
-        <div class="button-container">
-            <a class="main-button" href="#contact">{{'my-skills.button' | translate }}</a>
-        </div>
-    </div>    
+      </div>
+      <div class="text-skill">
+        <p>{{ "my-skills.text" | translate }}</p>
+      </div>
+    </div>
+    <div class="button-container">
+      <a class="main-button" href="#contact">{{
+        "my-skills.button" | translate
+      }}</a>
+    </div>
+  </div>
 </div>
 <div class="mobile-button-container">
-    <a class="main-button" href="#contact">{{'my-skills.button' | translate }}</a>
+  <a class="main-button" href="#contact">{{
+    "my-skills.button" | translate
+  }}</a>
 </div>

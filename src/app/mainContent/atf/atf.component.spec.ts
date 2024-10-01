@@ -8,10 +8,9 @@ describe('AtfComponent', () => {
 
   beforeEach(async () => {
     await TestBed.configureTestingModule({
-      imports: [AtfComponent]
-    })
-    .compileComponents();
-    
+      imports: [AtfComponent],
+    }).compileComponents();
+
     fixture = TestBed.createComponent(AtfComponent);
     component = fixture.componentInstance;
     fixture.detectChanges();

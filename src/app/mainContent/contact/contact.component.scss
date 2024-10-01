@@ -1,273 +1,265 @@
-@import './../about-me/about-me.component.scss';
-@import './../../../styles.scss';
-
+@import "./../about-me/about-me.component.scss";
+@import "./../../../styles.scss";
 
 .headline {
-    display: flex;
-    align-items: center;
-    gap: 50px;
-    padding-bottom: 85px;
+  display: flex;
+  align-items: center;
+  gap: 50px;
+  padding-bottom: 85px;
 
-    @media(max-width: 580px) {
-        gap: 5px;
-    }
+  @media (max-width: 580px) {
+    gap: 5px;
+  }
 }
 
 .line {
-    width: 50px;
-    height: 4px;
-    background-color: $purple-background-color;
+  width: 50px;
+  height: 4px;
+  background-color: $purple-background-color;
 
-    @media(max-width: 580px) {
-        width: 20px;
-    }
+  @media (max-width: 580px) {
+    width: 20px;
+  }
 }
 
 .main-container {
-    padding: 0px 100px;
-    display: flex;
-    justify-content: space-between;
-    padding-bottom: 51px;
+  padding: 0px 100px;
+  display: flex;
+  justify-content: space-between;
+  padding-bottom: 51px;
 
-    .text-container {
-
-        @media(max-width: 1000px) {
-            padding-bottom: 45px;
-        }
-    }
-
-    .text-container span {
-        font-weight: 700;
-    }
-
-    h3 {
-        font-size: 32px;
-        text-wrap: nowrap;
-
-        @media(max-width: 450px) {
-            font-size: 23px;
-        }
-
-        @media(max-width: 400px) {
-            font-size: 18px;
-        }
-    }
-
-    @media (max-width: 1220px) {
-        position: relative;
-        padding: 0px 25px;
-    }
-
+  .text-container {
     @media (max-width: 1000px) {
-        flex-direction: column;
+      padding-bottom: 45px;
     }
+  }
+
+  .text-container span {
+    font-weight: 700;
+  }
+
+  h3 {
+    font-size: 32px;
+    text-wrap: nowrap;
+
+    @media (max-width: 450px) {
+      font-size: 23px;
+    }
+
+    @media (max-width: 400px) {
+      font-size: 18px;
+    }
+  }
+
+  @media (max-width: 1220px) {
+    position: relative;
+    padding: 0px 25px;
+  }
+
+  @media (max-width: 1000px) {
+    flex-direction: column;
+  }
 }
 
-
 .form-container {
+  display: flex;
+  flex-direction: column;
+  max-width: 617px;
+
+  form {
     display: flex;
     flex-direction: column;
-    max-width: 617px;
+  }
 
-    form {
-        display: flex;
-        flex-direction: column;
+  .input-container {
+    position: relative;
+  }
 
+  input {
+    box-sizing: border-box;
+    background-color: $background-color;
+    border: solid 1px $purple-background-color;
+    border-radius: 10px;
+    padding: 15px 25px;
+    font-size: 16px;
+    font-weight: 400;
+    cursor: pointer;
+    color: white;
+    font-family: "Poppins";
+    width: 100%;
+
+    &:hover {
+      border: solid 1px $hover-link-color;
     }
 
-    .input-container {
-        position: relative;
+    &:focus {
+      outline: none;
+      border: solid 1px $hover-link-color;
+    }
+  }
+
+  ::placeholder {
+    color: white;
+  }
+
+  textarea {
+    box-sizing: border-box;
+    background-color: $background-color;
+    border: solid 1px $purple-background-color;
+    border-radius: 10px;
+    padding: 15px 25px;
+    color: white;
+    cursor: pointer;
+    font-family: "Poppins";
+    width: 100%;
+
+    &:hover {
+      border: solid 1px $hover-link-color;
     }
 
-    input {
-        box-sizing: border-box;
-        background-color: $background-color;
-        border: solid 1px $purple-background-color;
-        border-radius: 10px;
-        padding: 15px 25px;
-        font-size: 16px;
-        font-weight: 400;
-        cursor: pointer;
-        color: white;
-        font-family: 'Poppins';
-        width: 100%;
-
-        &:hover {
-            border: solid 1px $hover-link-color;
-        }
-
-        &:focus {
-            outline: none;
-            border: solid 1px $hover-link-color;
-        }
+    &:focus {
+      outline: none;
+      border: solid 1px $hover-link-color;
     }
-
-    ::placeholder {
-        color: white;
-    }
-
-    textarea {
-        box-sizing: border-box;
-        background-color: $background-color;
-        border: solid 1px $purple-background-color;
-        border-radius: 10px;
-        padding: 15px 25px;
-        color: white;
-        cursor: pointer;
-        font-family: 'Poppins';
-        width: 100%;
-
-        &:hover {
-            border: solid 1px $hover-link-color;
-        }
-
-        &:focus {
-            outline: none;
-            border: solid 1px $hover-link-color;
-        }
-    }
+  }
 }
 
 .input-icon {
-    position: absolute;
-    top: 15px;
-    left: 554px;
+  position: absolute;
+  top: 15px;
+  left: 554px;
 }
 
 .error-container {
-    height: 32px;
+  height: 32px;
 }
 
 .error-message {
-    font-size: 14px;
-    color: $error-color;
+  font-size: 14px;
+  color: $error-color;
 }
 
 .input-error {
-    border: solid 1px #E61C40 !important;
+  border: solid 1px #e61c40 !important;
 }
 
 .input-valid {
-    border: solid 1px #70E61C !important;
+  border: solid 1px #70e61c !important;
 }
 
 :-webkit-autofill {
-    transition: background-color 5000s ease-in-out 0s;
-    -webkit-text-fill-color: white !important;
-
+  transition: background-color 5000s ease-in-out 0s;
+  -webkit-text-fill-color: white !important;
 }
 
 input:-internal-autofill-previewed {
-    font-family: 'Poppins';
-    background-color: rgb(232, 240, 254) !important;
-    background-image: none !important;
-    color: rgb(0, 0, 0) !important;
+  font-family: "Poppins";
+  background-color: rgb(232, 240, 254) !important;
+  background-image: none !important;
+  color: rgb(0, 0, 0) !important;
 }
 
 .police-container {
-    display: flex;
-    flex-direction: column;
-    padding-bottom: 12px;
-    width: 100%;
+  display: flex;
+  flex-direction: column;
+  padding-bottom: 12px;
+  width: 100%;
 
-    .checkbox {
-        position: relative;
-        margin-bottom: 0
-    }
+  .checkbox {
+    position: relative;
+    margin-bottom: 0;
+  }
 
-    a {
-        color: $purple-background-color;
-    }
+  a {
+    color: $purple-background-color;
+  }
 
-    p {
-        font-size: 14px;
-    }
+  p {
+    font-size: 14px;
+  }
 }
 
 .checkbox-container {
-    display: flex;
-    gap: 20px;
-    align-items: center;
+  display: flex;
+  gap: 20px;
+  align-items: center;
 }
 
 .custom-checkbox {
-    position: absolute;
-    opacity: 0;
-    cursor: pointer;
-    height: 24px;
-    width: 0;
-
+  position: absolute;
+  opacity: 0;
+  cursor: pointer;
+  height: 24px;
+  width: 0;
 }
 
 .checkmark {
-    height: 24px;
-    width: 24px;
-    display: flex;
-    justify-content: center;
-    align-items: center;
+  height: 24px;
+  width: 24px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
 
-
-    img {
-        height: 16px;
-        width: 16px;
-        cursor: pointer;
-    }
+  img {
+    height: 16px;
+    width: 16px;
+    cursor: pointer;
+  }
 }
 
-.checkbox input.custom-checkbox:hover+.checkmark {
-    background-color: #797EF3;
-    border-radius: 50%;
+.checkbox input.custom-checkbox:hover + .checkmark {
+  background-color: #797ef3;
+  border-radius: 50%;
 }
-
 
 .message-container {
-    display: flex;
-    justify-content: center;
+  display: flex;
+  justify-content: center;
 }
 
 .message-button {
-    background-color: #70E61C !important;
-    max-width: 253px;
-    padding: 15px 30px;
-    border: none !important;
+  background-color: #70e61c !important;
+  max-width: 253px;
+  padding: 15px 30px;
+  border: none !important;
 
-    &:hover {
-        background-color: $purple-background-color !important;
-        transition: all 100ms ease-in-out;
-        transform: scale(1.1);
-    }
+  &:hover {
+    background-color: $purple-background-color !important;
+    transition: all 100ms ease-in-out;
+    transform: scale(1.1);
+  }
 
-    &:disabled {
-        background-color: #B6B6B6 !important;
-        cursor: unset !important;
-        transform: none;
-    }
+  &:disabled {
+    background-color: #b6b6b6 !important;
+    cursor: unset !important;
+    transform: none;
+  }
 }
 
 .go-up-button {
-    display: flex;
-    justify-content: flex-end;
-    padding-right: 100px;
-    padding-bottom: 90px;
+  display: flex;
+  justify-content: flex-end;
+  padding-right: 100px;
+  padding-bottom: 90px;
 
-    @media(max-width: 1220px) {
-        padding-right: 25px;
-        padding-top: 29px;
-    }
+  @media (max-width: 1220px) {
+    padding-right: 25px;
+    padding-top: 29px;
+  }
 
-    &:hover {
-        cursor: pointer;
-        filter: brightness(0) saturate(100%) invert(87%) sepia(91%) saturate(671%)
-                hue-rotate(33deg) brightness(93%) contrast(94%);
-    }
+  &:hover {
+    cursor: pointer;
+    filter: brightness(0) saturate(100%) invert(87%) sepia(91%) saturate(671%)
+      hue-rotate(33deg) brightness(93%) contrast(94%);
+  }
 }
 
 .purple_shadow_2 {
-    position: absolute;
-    bottom: -270px;
+  position: absolute;
+  bottom: -270px;
 
-    @media(max-width: 1000px) {
-        bottom: -44px;
-        width: 343px;
-    }
+  @media (max-width: 1000px) {
+    bottom: -44px;
+    width: 343px;
+  }
 }

@@ -1,21 +1,19 @@
-$background-color: #141D2F;
-$second-background-color: #1B2539;
-$purple-background-color: #9747FF;
-$primary-font-color: #FFFFFF;
-$hover-link-color: #70E61C;
+$background-color: #141d2f;
+$second-background-color: #1b2539;
+$purple-background-color: #9747ff;
+$primary-font-color: #ffffff;
+$hover-link-color: #70e61c;
 $button-font-size: 23px;
-$error-color: #E61C40;
-
-
+$error-color: #e61c40;
 
 /* poppins-regular - latin */
 @font-face {
   font-display: swap;
   /* Check https://developer.mozilla.org/en-US/docs/Web/CSS/@font-face/font-display for other options. */
-  font-family: 'Poppins';
+  font-family: "Poppins";
   font-style: normal;
   font-weight: 400;
-  src: url('assets/fonts/poppins-v21-latin-regular.woff2') format('woff2');
+  src: url("assets/fonts/poppins-v21-latin-regular.woff2") format("woff2");
   /* Chrome 36+, Opera 23+, Firefox 39+, Safari 12+, iOS 10+ */
 }
 
@@ -23,10 +21,10 @@ $error-color: #E61C40;
 @font-face {
   font-display: swap;
   /* Check https://developer.mozilla.org/en-US/docs/Web/CSS/@font-face/font-display for other options. */
-  font-family: 'Poppins';
+  font-family: "Poppins";
   font-style: normal;
   font-weight: 700;
-  src: url('assets/fonts/poppins-v21-latin-700.woff2') format('woff2');
+  src: url("assets/fonts/poppins-v21-latin-700.woff2") format("woff2");
   /* Chrome 36+, Opera 23+, Firefox 39+, Safari 12+, iOS 10+ */
 }
 
@@ -40,7 +38,7 @@ html {
 
 body {
   margin: 0;
-  font-family: 'Poppins';
+  font-family: "Poppins";
   background-color: $background-color;
   color: $primary-font-color;
   overflow-x: hidden;
@@ -69,11 +67,11 @@ body.no-scroll {
 }
 
 #skills {
-  scroll-margin-top: 122px; 
+  scroll-margin-top: 122px;
 }
 
 #portfolio {
-  scroll-margin-top: 122px; 
+  scroll-margin-top: 122px;
 }
 
 #about {

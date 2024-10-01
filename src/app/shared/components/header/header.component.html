@@ -1,33 +1,42 @@
 <header>
-    <div class="name"><a href="">Cecil</a></div>
-    <div class="menu">
-        <a href="#about">{{ 'header.about' | translate }}</a>
-        <a href="#skills">Skills</a>
-        <a href="#portfolio">Portfolio</a>
-        <div class="language-container">
-            @for (language of languages; track language) {
-            <button (click)="changeLanguage(language)" [ngClass]="{'active': isActiveLang(language)}">{{language |
-                uppercase}}</button>
-            }
-        </div>
+  <div class="name"><a href="">Cecil</a></div>
+  <div class="menu">
+    <a href="#about">{{ "header.about" | translate }}</a>
+    <a href="#skills">Skills</a>
+    <a href="#portfolio">Portfolio</a>
+    <div class="language-container">
+      @for (language of languages; track language) {
+      <button
+        (click)="changeLanguage(language)"
+        [ngClass]="{ active: isActiveLang(language) }"
+      >
+        {{ language | uppercase }}
+      </button>
+      }
     </div>
-    <div id="burger-icon" (click)="toggleMenu()">
-        <span></span>
-        <span></span>
-        <span></span>
-    </div>
+  </div>
+  <div id="burger-icon" (click)="toggleMenu()">
+    <span></span>
+    <span></span>
+    <span></span>
+  </div>
 
-    <div class="sidenav" id="sidenav">
-        <a href="#about" (click)="toggleMenu()">{{ 'header.about' | translate }}</a>
-        <a href="#skills" (click)="toggleMenu()">Skills</a>
-        <a href="#portfolio" (click)="toggleMenu()">Portfolio</a>
-        <a href="#contact" (click)="toggleMenu()">{{ 'header.contact' | translate }}</a>
-        <div class="language-container">
-            @for (language of languages; track language) {
-            <button (click)="changeLanguage(language)" [ngClass]="{'active': isActiveLang(language)}">{{language |
-                uppercase}}</button>
-            }
-        </div>
+  <div class="sidenav" id="sidenav">
+    <a href="#about" (click)="toggleMenu()">{{ "header.about" | translate }}</a>
+    <a href="#skills" (click)="toggleMenu()">Skills</a>
+    <a href="#portfolio" (click)="toggleMenu()">Portfolio</a>
+    <a href="#contact" (click)="toggleMenu()">{{
+      "header.contact" | translate
+    }}</a>
+    <div class="language-container">
+      @for (language of languages; track language) {
+      <button
+        (click)="changeLanguage(language)"
+        [ngClass]="{ active: isActiveLang(language) }"
+      >
+        {{ language | uppercase }}
+      </button>
+      }
     </div>
-
+  </div>
 </header>

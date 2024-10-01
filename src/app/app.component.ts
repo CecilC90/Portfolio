@@ -5,9 +5,7 @@ import { MainContentComponent } from './main-content/main-content.component';
 import { TranslateModule, TranslateService } from '@ngx-translate/core';
 import AOS from 'aos';
 import 'aos/dist/aos.css';
-import { FooterComponent } from "./shared/components/footer/footer.component";
-
-
+import { FooterComponent } from './shared/components/footer/footer.component';
 
 @Component({
   selector: 'app-root',
@@ -17,15 +15,14 @@ import { FooterComponent } from "./shared/components/footer/footer.component";
     HeaderComponent,
     MainContentComponent,
     TranslateModule,
-    FooterComponent
-],
+    FooterComponent,
+  ],
   templateUrl: './app.component.html',
-  styleUrl: './app.component.scss'
+  styleUrl: './app.component.scss',
 })
-export class AppComponent implements OnInit{
+export class AppComponent implements OnInit {
   languages = ['en', 'de'];
   private translateService = inject(TranslateService);
-
 
   ngOnInit(): void {
     const defaultLange = localStorage.getItem('language') || 'en';

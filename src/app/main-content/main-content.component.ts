@@ -7,7 +7,6 @@ import { PortfolioComponent } from '../mainContent/portfolio/portfolio.component
 import { ContactComponent } from '../mainContent/contact/contact.component';
 import { FooterComponent } from '../shared/components/footer/footer.component';
 
-
 @Component({
   selector: 'app-main-content',
   standalone: true,
@@ -18,11 +17,9 @@ import { FooterComponent } from '../shared/components/footer/footer.component';
     MySkillsComponent,
     PortfolioComponent,
     ContactComponent,
-    FooterComponent
+    FooterComponent,
   ],
   templateUrl: './main-content.component.html',
-  styleUrl: './main-content.component.scss'
+  styleUrl: './main-content.component.scss',
 })
-export class MainContentComponent {
-
-}
+export class MainContentComponent {}

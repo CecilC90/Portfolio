@@ -4,17 +4,12 @@ import { Component, OnInit, inject } from '@angular/core';
 import { FormsModule, NgForm } from '@angular/forms';
 import { TranslateService, TranslateModule } from '@ngx-translate/core';
 
-
 @Component({
   selector: 'app-contact',
   standalone: true,
-  imports: [
-    FormsModule,
-    NgClass,
-    TranslateModule
-  ],
+  imports: [FormsModule, NgClass, TranslateModule],
   templateUrl: './contact.component.html',
-  styleUrl: './contact.component.scss'
+  styleUrl: './contact.component.scss',
 })
 export class ContactComponent implements OnInit {
   private translateService = inject(TranslateService);
@@ -29,11 +24,11 @@ export class ContactComponent implements OnInit {
   http = inject(HttpClient);
 
   contactData = {
-    name: "",
-    email: "",
-    message: "",
-    privacy: false
-  }
+    name: '',
+    email: '',
+    message: '',
+    privacy: false,
+  };
 
   mailTest = true;
 
@@ -57,10 +52,10 @@ export class ContactComponent implements OnInit {
   onSubmit(ngForm: NgForm) {
     console.log('test');
     if (ngForm.submitted && ngForm.form.valid && !this.mailTest) {
-      this.http.post(this.post.endPoint, this.post.body(this.contactData))
+      this.http
+        .post(this.post.endPoint, this.post.body(this.contactData))
         .subscribe({
           next: (response) => {
-
             ngForm.resetForm();
           },
           error: (error) => {
@@ -69,10 +64,7 @@ export class ContactComponent implements OnInit {
           complete: () => console.info('send post complete'),
         });
     } else if (ngForm.submitted && ngForm.form.valid && this.mailTest) {
-
       ngForm.resetForm();
     }
   }
-
-
 }

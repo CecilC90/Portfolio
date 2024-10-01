@@ -1,82 +1,81 @@
-@import './../../../../styles.scss';
+@import "./../../../../styles.scss";
 
 .footer-container {
-    background-color: $background-color;
-    padding: 100px 100px;
-    border-top: 4px solid $hover-link-color;
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
+  background-color: $background-color;
+  padding: 100px 100px;
+  border-top: 4px solid $hover-link-color;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
 
-    @media(max-width: 780px) {
-        align-items: center;
-        padding: 66px 0px;
+  @media (max-width: 780px) {
+    align-items: center;
+    padding: 66px 0px;
+  }
+
+  h1 {
+    font-size: 40px;
+
+    @media (max-width: 780px) {
+      padding-bottom: 54px;
     }
+  }
 
-    h1 {
-        font-size: 40px;
+  span {
+    font-size: 23px;
 
-        @media(max-width: 780px) {
-            padding-bottom: 54px;
-        }
+    @media (max-width: 780px) {
+      padding-bottom: 23px;
     }
-
-    span {
-        font-size: 23px;
-
-        @media(max-width: 780px) {
-            padding-bottom: 23px;
-        }
-    }
+  }
 }
 
 .main {
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
-    width: 100%;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  width: 100%;
 
-    @media(max-width: 780px) {
-        flex-direction: column;
-    }
-
+  @media (max-width: 780px) {
+    flex-direction: column;
+  }
 }
 
 .icon-container {
-    display: flex;
-    gap: 42px;
+  display: flex;
+  gap: 42px;
 
-    @media(max-width: 780px) {
-        padding-bottom: 23px;
+  @media (max-width: 780px) {
+    padding-bottom: 23px;
+  }
+
+  a {
+    width: 30px;
+
+    &:hover {
+      transition: all 100ms ease-in-out;
+      scale: (1.2);
     }
-
-    a {
-        width: 30px;
-
-        &:hover {
-            transition: all 100ms ease-in-out;
-            scale: (1.2);
-        }
-    }
+  }
 }
 
 a {
-    font-size: 16px;
-    font-weight: 400;
-    max-width: fit-content;
+  font-size: 16px;
+  font-weight: 400;
+  max-width: fit-content;
 
-    &:hover + .underline {
-        opacity: 1;
-    }
+  &:hover + .underline {
+    opacity: 1;
+  }
 }
 
 .underline {
-    opacity: 0;
-    width: 55.5px;
-    height: 3px;
-    background-color: #1CDAE6;
+  opacity: 0;
+  width: 55.5px;
+  height: 3px;
+  background-color: #1cdae6;
 
-    @media(max-width: 780px) {
-        display: none;
-    }
-} 
+  @media (max-width: 780px) {
+    display: none;
+  }
+}
