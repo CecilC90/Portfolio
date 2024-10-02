@@ -19,3 +19,10 @@ app-imprint {
   position: relative;
   max-width: 1440px;
 }
+
+router-outlet {
+  display: flex;
+    flex-direction: column;
+    position: relative;
+    max-width: 1440px;
+}

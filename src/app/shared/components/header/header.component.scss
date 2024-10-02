@@ -6,6 +6,7 @@ header {
   align-items: center;
   padding: 37px 100px;
   background-color: $background-color;
+  z-index: 1000;
 
   @media (max-width: 950px) {
     padding: 37px 25px;

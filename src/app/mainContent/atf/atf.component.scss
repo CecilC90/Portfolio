@@ -87,6 +87,7 @@
 
   @media (max-width: 580px) {
     padding-bottom: 48px;
+    gap: 24px;
   }
 }
 
@@ -138,7 +139,7 @@
   }
 
   @media (max-width: 380px) {
-    height: 360px;
+    height: 338px;
   }
 }
 
@@ -231,6 +232,7 @@
   background-color: $hover-link-color;
   transition: all 100ms ease-in-out;
   max-height: 64px;
+  z-index: 999;
 
   &:hover {
     background-color: #9747ff;

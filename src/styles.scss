@@ -1,3 +1,5 @@
+
+
 $background-color: #141d2f;
 $second-background-color: #1b2539;
 $purple-background-color: #9747ff;
@@ -59,6 +61,7 @@ app-root {
 
   @media (max-width: 1440px) {
     width: 100%;
+    position: relative;
   }
 }
 
@@ -68,6 +71,8 @@ body.no-scroll {
 
 #skills {
   scroll-margin-top: 122px;
+
+ 
 }
 
 #portfolio {
