@@ -3,6 +3,7 @@ import { HttpClient } from '@angular/common/http';
 import { Component, OnInit, inject } from '@angular/core';
 import { FormsModule, NgForm } from '@angular/forms';
 import { TranslateService, TranslateModule } from '@ngx-translate/core';
+import { Subject } from 'rxjs';
 
 @Component({
   selector: 'app-contact',
@@ -14,6 +15,8 @@ import { TranslateService, TranslateModule } from '@ngx-translate/core';
 export class ContactComponent implements OnInit {
   private translateService = inject(TranslateService);
 
+  http = inject(HttpClient);
+
   ngOnInit(): void {
     const defaultLang = localStorage.getItem('language') || 'en';
     this.translateService.use(defaultLang);
@@ -21,7 +24,7 @@ export class ContactComponent implements OnInit {
 
   public isChecked = false;
 
-  http = inject(HttpClient);
+  
 
   contactData = {
     name: '',
@@ -30,10 +33,10 @@ export class ContactComponent implements OnInit {
     privacy: false,
   };
 
-  mailTest = true;
+  mailTest = false;
 
   post = {
-    endPoint: 'https://deineDomain.de/sendMail.php',
+    endPoint: 'https://cecil-cigan.at/sendMail.php',
     body: (payload: any) => JSON.stringify(payload),
     options: {
       headers: {
@@ -50,21 +53,32 @@ export class ContactComponent implements OnInit {
   }
 
   onSubmit(ngForm: NgForm) {
-    console.log('test');
+    // Ausgabe der aktuellen Daten zur Überprüfung in der Konsole
+    console.log(this.contactData);
+  
+    // Überprüfe, ob das Formular übermittelt wurde, gültig ist und ob die Testbedingung erfüllt ist.
     if (ngForm.submitted && ngForm.form.valid && !this.mailTest) {
+      // HTTP-Post-Anfrage an das Backend
       this.http
-        .post(this.post.endPoint, this.post.body(this.contactData))
+        .post(this.post.endPoint, this.post.body(this.contactData), this.post.options)
         .subscribe({
           next: (response) => {
-            ngForm.resetForm();
+            console.log('E-Mail erfolgreich gesendet:', response);
+            ngForm.resetForm();  // Setze das Formular zurück nach erfolgreicher Übermittlung
           },
           error: (error) => {
-            console.error(error);
+            console.error('Fehler beim Senden der E-Mail:', error);
+            // Fehlerbehandlung oder Benachrichtigung für den Nutzer
           },
-          complete: () => console.info('send post complete'),
+          complete: () => console.info('E-Mail Sendevorgang abgeschlossen'),
         });
     } else if (ngForm.submitted && ngForm.form.valid && this.mailTest) {
+      // Testbedingung - könnte für Tests genutzt werden, um ohne tatsächliches Absenden das Formular zu resetten
+      console.log('Formulartest - Mail wurde nicht versendet.');
       ngForm.resetForm();
+    } else {
+      console.warn('Das Formular ist ungültig oder wurde noch nicht übermittelt.');
     }
   }
+  
 }

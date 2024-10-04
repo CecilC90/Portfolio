@@ -12,7 +12,7 @@
     </div>
     <div class="head-container">
       <div class="text-container">
-        <div class="vertikal">I am</div>
+        <div class="vertikal" [ngClass]="{ 'german-font': isGerman() }">{{ "atf.iam" | translate }}</div>
         <div>
           <div class="name">Cecil Cigan</div>
           <div class="title">FRONTEND DEVELOPER</div>
@@ -22,11 +22,13 @@
         <a href="#contact" class="main-button">{{ "atf.talk" | translate }}</a>
       </div>
     </div>
-    <img
-      class="curved-background-container"
-      src="../../../assets/img/Vector.svg"
-      alt=""
-    />
+    <div class="curved-background-container">
+      <img
+        class="curved-background-container"
+        src="../../../assets/img/Vector.svg"
+        alt=""
+      />
+    </div>
   </div>
   <div class="bottom-container">
     <div class="social-links-container">

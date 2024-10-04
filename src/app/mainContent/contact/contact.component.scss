@@ -262,4 +262,8 @@ input:-internal-autofill-previewed {
     bottom: -44px;
     width: 343px;
   }
+
+  @media (max-width: 350px) {
+    width: 100%;
+  }
 }

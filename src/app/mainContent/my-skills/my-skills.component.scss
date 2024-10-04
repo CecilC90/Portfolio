@@ -69,7 +69,7 @@ hr {
   max-width: 785px;
   flex-wrap: wrap;
   column-gap: 123px;
-  justify-content: center;
+  justify-content: flex-start;
   row-gap: 35px;
   z-index: 1;
 
@@ -81,6 +81,7 @@ hr {
 
   @media (max-width: 1160px) {
     padding-left: 0;
+    justify-content: center;
   }
 
   @media (max-width: 500px) {
@@ -193,4 +194,8 @@ hr {
   position: absolute;
   top: 53px;
   left: 0px;
+
+  @media (max-width: 350px) {
+    width: 100%;
+  }
 }

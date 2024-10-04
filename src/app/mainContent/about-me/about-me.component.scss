@@ -4,11 +4,14 @@
   margin-top: -32px;
   position: relative;
   display: flex;
-  align-items: flex-end;
-  padding-left: 100px;
+  align-items: center;
+  justify-content: center;
+  //padding-left: 100px;
   gap: 149px;
   padding-bottom: 154px;
   background-color: transparent;
+  width: 100%;
+  overflow: hidden;
 
   @media (max-width: 1440px) {
     width: 100%;
@@ -109,12 +112,11 @@ h1 {
 
 .purple-shadow {
   position: absolute;
-  top: -223px;
-  right: -211px;
+  top: -8px;
+  right: -0px;
   z-index: 4;
 
   @media (max-width: 1440px) {
-    right: -115px;
     z-index: -1;
   }
 
