@@ -53,31 +53,28 @@ export class ContactComponent implements OnInit {
   }
 
   onSubmit(ngForm: NgForm) {
+    // Ausgabe der aktuellen Daten zur Überprüfung in der Konsole
+    console.log(this.contactData);
+  
+    // Überprüfe, ob das Formular übermittelt wurde, gültig ist und ob die Testbedingung erfüllt ist.
     if (ngForm.submitted && ngForm.form.valid && !this.mailTest) {
+      // HTTP-Post-Anfrage an das Backend
       this.http
         .post(this.post.endPoint, this.post.body(this.contactData))
         .subscribe({
           next: (response) => {
             console.log('E-Mail erfolgreich gesendet:', response);
-            ngForm.resetForm();
-            this.isChecked = false;
-            this.emailSentSuccessfully = true;
-            setTimeout(() => {
-              this.emailSentSuccessfully = false;
-            }, 3000);  // Nach 3 Sekunden den ursprünglichen Text wiederherstellen
+            ngForm.resetForm();  // Setze das Formular zurück nach erfolgreicher Übermittlung
           },
-          error: (error) => {
-            console.error('Fehler beim Senden der E-Mail:', error);
-          },
+          
           complete: () => console.info('E-Mail Sendevorgang abgeschlossen'),
         });
     } else if (ngForm.submitted && ngForm.form.valid && this.mailTest) {
+      // Testbedingung - könnte für Tests genutzt werden, um ohne tatsächliches Absenden das Formular zu resetten
       console.log('Formulartest - Mail wurde nicht versendet.');
       ngForm.resetForm();
     } else {
-      console.warn(
-        'Das Formular ist ungültig oder wurde noch nicht übermittelt.'
-      );
+      console.warn('Das Formular ist ungültig oder wurde noch nicht übermittelt.');
     }
   }
 }
