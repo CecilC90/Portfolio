@@ -42,7 +42,8 @@
         "privacyPoliceLink": "privacy police",
         "privacyPolice2": "and agree to the processing of my data as outlined",
         "privacyPoliceErr": "Please accept the privacy policy.",
-        "button": "message me"
+        "button": "message me",
+        "successButton": "message sendet"
     },
     "imprint": {
         "info": "Information and Disclosure according to § 5 (1) ECG, § 25 MedienG, § 63 GewO, and § 14 UGB",
@@ -64,5 +65,42 @@
         "disclaimer-text": "Despite careful content control, the website operator of this website assumes no liability for the content of external links. The operators of the linked pages are solely responsible for their content. If you become aware of outgoing links that refer to a website with unlawful activity/information, please inform us accordingly to promptly remove them pursuant to § 17 Abs. 2 ECG",
         "disclaimer-secondText": "The copyrights of third parties are carefully respected by the operator of this website. If you nevertheless become aware of a copyright infringement, please provide us with the corresponding notice. Upon becoming aware of such infringements, we will promptly remove the affected content",
         "source": "Source"
+    },
+    "privacy": {
+        "headline": "Privacy Policy",
+        "generalText1": "In the following privacy policy, we inform you about the most important aspects of data processing within the framework of our website. We collect and process personal data only on the basis of legal provisions (General Data Protection Regulation, Telecommunications Act 2003).",
+        "generalText2": "As soon as you, as a user, access or visit our website, your IP address, start and start and end of the session will be recorded. This is technically necessary and thus constitutes a legitimate interest within the meaning of Art 6 Para 1 lit f GDPR.",
+        "contactUs": "Contact with us",
+        "contactText": "If you contact us, either via our contact form on our website or by email, the data you provide to us will be stored for six months for the purpose of processing your request or for any follow-up questions. Your transmitted data will not be passed on without your consent.",
+        "fontsHeadline": "Google Fonts",
+        "fontsText1": "Our website uses fonts from Google Fonts. The service provider of this function is: ",
+        "fontsText2": "Google Ireland Limited Gordon House, Barrow Street Dublin 4. Ireland",
+        "fontsPhone": "Tel: +353 1 543 1000",
+        "fontsText3": "When you visit this website, your browser loads fonts and stores them in the cache. Since you, as a visitor to the website, receive data from the service provider, Google may set or analyze cookies on your computer.",
+        "fontsText4": "The use of Google Fonts serves to optimize our service and to ensure a uniform presentation of content. This constitutes a legitimate interest within the meaning of Art. 6 Para. 1 lit. f GDPR. ",
+        "fontsText5": "For more information about Google Fonts, please visit the following link: ",
+        "fontsLink1": "https://developers.google.com/fonts/faq",
+        "fontsText6": "For more information on how Google handles user data, please refer to Google's privacy policy: ",
+        "fontsLink2": "https://policies.google.com/privacy?hl=de .",
+        "fontsText7": "Google also processes the data in the USA but is <br /> committed to the EU-US Privacy Shield. ",
+        "fontsLink3": "https://www.privacyshield.gov/EU-US-Framework",
+        "rightsHeadline": "Your rights as a data subject",
+        "rightsText1": "You as a data subject have the right to:",
+        "rightsList1": "Information",
+        "rightsList2": "Deletion of data",
+        "rightsList3": "Correction of data",
+        "rightsList4": "Data portability",
+        "rightsList5": "Revocation and objection to data processing",
+        "rightsList6": "Restriction",
+        "rightsText2": "If you suspect that your data has been processed in violation of data protection law, you have the option to file a complaint with us (c.cigan@gmx.net) or the data protection authority.",
+        "contactHeadline": "You can reach us at the following contact details:",
+        "nameTitle": "Website operator: ",
+        "name": "Cecil Cigan",
+        "phoneTitle": "Phone number: ",
+        "phone": "06645463994",
+        "emailTitle" : "Email: ",
+        "email": "c.cigan@gmx.net",
+        "source": "Source: ",
+        "sourceLink": "DSGVO Generator Austria"
     }
 }

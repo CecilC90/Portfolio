@@ -145,23 +145,24 @@
               [checked]="isChecked"
               (change)="toggleCheckbox($event)"
               required
+              
             />
             @if (isChecked) {
-            <span class="checkmark">
-              <img src="../../../assets/img/check_box.svg" alt="" />
-            </span>
-            } @else {
-            <span class="checkmark">
-              <img
-                src="../../../assets/img/check_box_outline_blank.svg"
-                alt=""
-              />
-            </span>
-            }
+              <span class="checkmark">
+                <img src="../../../assets/img/check_box.svg" alt="" />
+              </span>
+              } @else {
+              <span class="checkmark">
+                <img
+                  src="../../../assets/img/check_box_outline_blank.svg"
+                  alt=""
+                />
+              </span>
+              }
           </div>
           <p>
             {{ "contact.privacyPolice1" | translate }}
-            <a href="">{{ "contact.privacyPoliceLink" | translate }} </a
+            <a href="privacy-policy">{{ "contact.privacyPoliceLink" | translate }} </a
             >{{ "contact.privacyPolice2" | translate }}
           </p>
         </div>
@@ -174,12 +175,13 @@
         </div>
       </div>
       <div class="message-container">
-        <input
+        <input #sendButton
           type="submit"
           value="{{ 'contact.button' | translate }}"
           class="message-button"
           [disabled]="!contactForm.valid"
         />
+        <span [ngClass]="{ 'success-animation': emailSentSuccessfully }" class="success-container">{{ 'contact.successButton' | translate}} </span>
       </div>
     </form>
   </div>

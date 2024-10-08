@@ -1,0 +1,568 @@
+/* poppins-regular - latin */
+@font-face {
+  font-display: swap;
+  /* Check https://developer.mozilla.org/en-US/docs/Web/CSS/@font-face/font-display for other options. */
+  font-family: "Poppins";
+  font-style: normal;
+  font-weight: 400;
+  src: url("assets/fonts/poppins-v21-latin-regular.woff2") format("woff2");
+  /* Chrome 36+, Opera 23+, Firefox 39+, Safari 12+, iOS 10+ */
+}
+/* poppins-700 - latin */
+@font-face {
+  font-display: swap;
+  /* Check https://developer.mozilla.org/en-US/docs/Web/CSS/@font-face/font-display for other options. */
+  font-family: "Poppins";
+  font-style: normal;
+  font-weight: 700;
+  src: url("assets/fonts/poppins-v21-latin-700.woff2") format("woff2");
+  /* Chrome 36+, Opera 23+, Firefox 39+, Safari 12+, iOS 10+ */
+}
+* {
+  margin: 0;
+}
+
+html {
+  scroll-behavior: smooth;
+}
+
+body {
+  margin: 0px;
+  font-family: "Poppins";
+  background-color: #141d2f;
+  color: #ffffff;
+  overflow-x: hidden;
+  box-sizing: border-box;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+@media (max-width: 1440px) {
+  body {
+    width: 100%;
+  }
+}
+body a {
+  text-decoration: none;
+  color: #ffffff;
+}
+
+app-root {
+  width: 1440px;
+  overflow: hidden;
+}
+@media (max-width: 1440px) {
+  app-root {
+    width: 100%;
+    position: relative;
+  }
+}
+
+body.no-scroll {
+  overflow: hidden;
+}
+
+#skills {
+  scroll-margin-top: 122px;
+}
+
+#portfolio {
+  scroll-margin-top: 122px;
+}
+
+#about {
+  scroll-margin-top: 172px;
+}
+
+#contact {
+  scroll-margin-top: 122px;
+}
+
+.about-me-container {
+  margin-top: -32px;
+  position: relative;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 149px;
+  padding-bottom: 154px;
+  background-color: transparent;
+  width: 100%;
+  overflow: hidden;
+}
+@media (max-width: 1440px) {
+  .about-me-container {
+    width: 100%;
+  }
+}
+@media (max-width: 1220px) {
+  .about-me-container {
+    justify-content: space-between;
+    gap: 0;
+  }
+}
+@media (max-width: 1100px) {
+  .about-me-container {
+    padding-left: 25px;
+  }
+}
+@media (max-width: 1000px) {
+  .about-me-container {
+    justify-content: center;
+  }
+}
+@media (max-width: 530px) {
+  .about-me-container {
+    padding: 0px 28px;
+    padding-bottom: 145px;
+  }
+}
+
+.text-container {
+  display: flex;
+  flex-direction: column;
+  max-width: 471px;
+  gap: 35px;
+}
+@media (max-width: 530px) {
+  .text-container p {
+    display: flex;
+    flex-wrap: wrap;
+  }
+}
+
+h1 {
+  font-size: 90px;
+  font-weight: 700;
+  background-color: transparent;
+  text-wrap: nowrap;
+}
+@media (max-width: 1220px) {
+  h1 {
+    font-size: 72px;
+  }
+}
+@media (max-width: 580px) {
+  h1 {
+    font-size: 45px;
+  }
+}
+@media (max-width: 420px) {
+  h1 {
+    font-size: 36px;
+  }
+}
+
+.picture-container {
+  display: flex;
+  align-items: center;
+  height: 509px;
+  width: 509px;
+}
+.picture-container img {
+  height: 453px;
+  width: 453px;
+}
+.picture-container hr {
+  position: absolute;
+  display: flex;
+  width: 267px;
+  height: 4px;
+  background-color: #70e61c;
+  border: none;
+  z-index: 6;
+}
+@media (max-width: 1000px) {
+  .picture-container {
+    display: none;
+  }
+}
+
+.personal-details {
+  display: flex;
+  gap: 35px;
+  font-size: 16px;
+  font-weight: 400;
+}
+.personal-details img {
+  transition: transform 0.2s;
+}
+.personal-details img:hover {
+  transform: scale(1.2);
+}
+
+.purple-shadow {
+  position: absolute;
+  top: -8px;
+  right: 0px;
+  z-index: 4;
+}
+@media (max-width: 1440px) {
+  .purple-shadow {
+    z-index: -1;
+  }
+}
+@media (max-width: 540px) {
+  .purple-shadow {
+    display: none;
+  }
+}
+
+/* poppins-regular - latin */
+@font-face {
+  font-display: swap;
+  /* Check https://developer.mozilla.org/en-US/docs/Web/CSS/@font-face/font-display for other options. */
+  font-family: "Poppins";
+  font-style: normal;
+  font-weight: 400;
+  src: url("assets/fonts/poppins-v21-latin-regular.woff2") format("woff2");
+  /* Chrome 36+, Opera 23+, Firefox 39+, Safari 12+, iOS 10+ */
+}
+/* poppins-700 - latin */
+@font-face {
+  font-display: swap;
+  /* Check https://developer.mozilla.org/en-US/docs/Web/CSS/@font-face/font-display for other options. */
+  font-family: "Poppins";
+  font-style: normal;
+  font-weight: 700;
+  src: url("assets/fonts/poppins-v21-latin-700.woff2") format("woff2");
+  /* Chrome 36+, Opera 23+, Firefox 39+, Safari 12+, iOS 10+ */
+}
+* {
+  margin: 0;
+}
+
+html {
+  scroll-behavior: smooth;
+}
+
+body {
+  margin: 0px;
+  font-family: "Poppins";
+  background-color: #141d2f;
+  color: #ffffff;
+  overflow-x: hidden;
+  box-sizing: border-box;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+@media (max-width: 1440px) {
+  body {
+    width: 100%;
+  }
+}
+body a {
+  text-decoration: none;
+  color: #ffffff;
+}
+
+app-root {
+  width: 1440px;
+  overflow: hidden;
+}
+@media (max-width: 1440px) {
+  app-root {
+    width: 100%;
+    position: relative;
+  }
+}
+
+body.no-scroll {
+  overflow: hidden;
+}
+
+#skills {
+  scroll-margin-top: 122px;
+}
+
+#portfolio {
+  scroll-margin-top: 122px;
+}
+
+#about {
+  scroll-margin-top: 172px;
+}
+
+#contact {
+  scroll-margin-top: 122px;
+}
+
+.headline {
+  display: flex;
+  align-items: center;
+  gap: 50px;
+  padding-bottom: 85px;
+}
+@media (max-width: 580px) {
+  .headline {
+    gap: 5px;
+  }
+}
+
+.line {
+  width: 50px;
+  height: 4px;
+  background-color: #9747ff;
+}
+@media (max-width: 580px) {
+  .line {
+    width: 20px;
+  }
+}
+
+.main-container {
+  padding: 0px 100px;
+  display: flex;
+  justify-content: space-between;
+  padding-bottom: 51px;
+}
+@media (max-width: 1000px) {
+  .main-container .text-container {
+    padding-bottom: 45px;
+  }
+}
+.main-container .text-container span {
+  font-weight: 700;
+}
+.main-container h3 {
+  font-size: 32px;
+  text-wrap: nowrap;
+}
+@media (max-width: 450px) {
+  .main-container h3 {
+    font-size: 23px;
+  }
+}
+@media (max-width: 400px) {
+  .main-container h3 {
+    font-size: 18px;
+  }
+}
+@media (max-width: 1220px) {
+  .main-container {
+    position: relative;
+    padding: 0px 25px;
+  }
+}
+@media (max-width: 1000px) {
+  .main-container {
+    flex-direction: column;
+  }
+}
+
+.form-container {
+  display: flex;
+  flex-direction: column;
+  max-width: 617px;
+}
+.form-container form {
+  display: flex;
+  flex-direction: column;
+}
+.form-container .input-container {
+  position: relative;
+}
+.form-container input {
+  position: relative;
+  box-sizing: border-box;
+  background-color: #141d2f;
+  border: solid 1px #9747ff;
+  border-radius: 10px;
+  padding: 15px 25px;
+  font-size: 16px;
+  font-weight: 400;
+  cursor: pointer;
+  color: white;
+  font-family: "Poppins";
+  width: 100%;
+  z-index: 1;
+}
+.form-container input:hover {
+  border: solid 1px #70e61c;
+}
+.form-container input:focus {
+  outline: none;
+  border: solid 1px #70e61c;
+}
+.form-container ::-moz-placeholder {
+  color: white;
+}
+.form-container ::placeholder {
+  color: white;
+}
+.form-container textarea {
+  box-sizing: border-box;
+  background-color: #141d2f;
+  border: solid 1px #9747ff;
+  border-radius: 10px;
+  padding: 15px 25px;
+  color: white;
+  cursor: pointer;
+  font-family: "Poppins";
+  width: 100%;
+}
+.form-container textarea:hover {
+  border: solid 1px #70e61c;
+}
+.form-container textarea:focus {
+  outline: none;
+  border: solid 1px #70e61c;
+}
+
+.input-icon {
+  position: absolute;
+  top: 14px;
+  right: 13px;
+  z-index: 2;
+}
+
+.error-container {
+  height: 32px;
+}
+
+.error-message {
+  font-size: 14px;
+  color: #e61c40;
+}
+
+.input-error {
+  border: solid 1px #e61c40 !important;
+}
+
+.input-valid {
+  border: solid 1px #70e61c !important;
+}
+
+:-webkit-autofill {
+  -webkit-transition: background-color 5000s ease-in-out 0s;
+  transition: background-color 5000s ease-in-out 0s;
+  -webkit-text-fill-color: white !important;
+}
+
+input:-internal-autofill-previewed {
+  font-family: "Poppins";
+  background-color: rgb(232, 240, 254) !important;
+  background-image: none !important;
+  color: rgb(0, 0, 0) !important;
+}
+
+.police-container {
+  display: flex;
+  flex-direction: column;
+  padding-bottom: 12px;
+  width: 100%;
+  display: flex;
+  align-items: center;
+}
+.police-container .checkbox {
+  position: relative;
+  margin-bottom: 0;
+}
+.police-container a {
+  color: #9747ff;
+}
+.police-container p {
+  font-size: 14px;
+}
+
+.checkbox-container {
+  display: flex;
+  gap: 20px;
+  align-items: center;
+}
+
+.custom-checkbox {
+  position: absolute;
+  opacity: 0;
+  cursor: pointer;
+  height: 24px;
+  width: 0;
+}
+
+.checkmark {
+  position: absolute;
+  top: 3px;
+  height: 24px;
+  width: 24px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.checkmark img {
+  height: 16px;
+  width: 16px;
+  cursor: pointer;
+}
+
+.checkbox input.custom-checkbox:hover + .checkmark {
+  background-color: #797ef3;
+  border-radius: 50%;
+}
+
+.message-container {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+.message-button {
+  background-color: #70e61c !important;
+  max-width: 253px;
+  padding: 15px 30px;
+  border: none !important;
+}
+.message-button:hover {
+  background-color: #9747ff !important;
+  transition: all 100ms ease-in-out;
+  transform: scale(1.1);
+}
+.message-button:disabled {
+  background-color: #b6b6b6 !important;
+  cursor: unset !important;
+  transform: none;
+}
+
+.success-container {
+  display: none;
+  padding: 5px;
+  color: #70e61c;
+}
+
+.success-animation {
+  display: block;
+}
+
+.go-up-button {
+  display: flex;
+  justify-content: flex-end;
+  padding-right: 100px;
+  padding-bottom: 90px;
+}
+@media (max-width: 1220px) {
+  .go-up-button {
+    padding-right: 25px;
+    padding-top: 29px;
+  }
+}
+.go-up-button:hover {
+  cursor: pointer;
+  filter: brightness(0) saturate(100%) invert(87%) sepia(91%) saturate(671%) hue-rotate(33deg) brightness(93%) contrast(94%);
+}
+
+.purple_shadow_2 {
+  position: absolute;
+  bottom: -270px;
+}
+@media (max-width: 1000px) {
+  .purple_shadow_2 {
+    bottom: -44px;
+    width: 343px;
+  }
+}
+@media (max-width: 350px) {
+  .purple_shadow_2 {
+    width: 100%;
+  }
+}/*# sourceMappingURL=contact.component.css.map */

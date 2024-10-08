@@ -76,6 +76,7 @@
   }
 
   input {
+    position: relative;
     box-sizing: border-box;
     background-color: $background-color;
     border: solid 1px $purple-background-color;
@@ -87,6 +88,7 @@
     color: white;
     font-family: "Poppins";
     width: 100%;
+    z-index: 1;
 
     &:hover {
       border: solid 1px $hover-link-color;
@@ -126,8 +128,9 @@
 
 .input-icon {
   position: absolute;
-  top: 15px;
-  left: 554px;
+  top: 14px;
+  right: 13px;
+  z-index: 2;      
 }
 
 .error-container {
@@ -164,6 +167,8 @@ input:-internal-autofill-previewed {
   flex-direction: column;
   padding-bottom: 12px;
   width: 100%;
+  display: flex;
+  align-items: center;
 
   .checkbox {
     position: relative;
@@ -194,6 +199,8 @@ input:-internal-autofill-previewed {
 }
 
 .checkmark {
+  position: absolute;
+  top: 3px;
   height: 24px;
   width: 24px;
   display: flex;
@@ -214,7 +221,9 @@ input:-internal-autofill-previewed {
 
 .message-container {
   display: flex;
+  flex-direction: column;
   justify-content: center;
+  align-items: center;
 }
 
 .message-button {
@@ -234,6 +243,16 @@ input:-internal-autofill-previewed {
     cursor: unset !important;
     transform: none;
   }
+}
+
+.success-container {
+  display: none;
+  padding: 5px;
+  color: #70e61c;
+}
+
+.success-animation {
+  display: block;
 }
 
 .go-up-button {
@@ -267,3 +286,4 @@ input:-internal-autofill-previewed {
     width: 100%;
   }
 }
+

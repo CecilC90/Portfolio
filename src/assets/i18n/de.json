@@ -42,7 +42,8 @@
         "privacyPoliceLink": "Datenschutzbestimmungen",
         "privacyPolice2": "und erkläre mich mit der Verarbeitung meiner Daten wie beschrieben einverstanden",
         "privacyPoliceErr": "Bitte akzeptieren Sie die Datenschutzbestimmungen",
-        "button": "Nachricht senden"
+        "button": "Nachricht senden",
+        "successButton": "Nachricht gesendet"
     },
     "imprint": {
         "info": "Informationen und Offenlegung gemäß § 5 (1) ECG, § 25 MedienG, § 63 GewO und § 14UGB",
@@ -64,6 +65,43 @@
         "disclaimer-text": "Trotz sorgfältiger inhaltlicher Kontrolle übernimmt der Webseitenbetreiber dieser Webseite keine Haftung für die Inhalte externer Links. Für den Inhalt der verlinkten Seiten sind ausschließlich deren Betreiber verantwortlich. Sollten Sie dennoch auf ausgehende Links aufmerksam werden, welche auf eine Webseite mit rechtswidriger Tätigkeit/Information verweisen, ersuchen wir um dementsprechenden Hinweis, um diese nach § 17 Abs. 2 ECG umgehend zu entfernen",
         "disclaimer-secondText": "Die Urheberrechte Dritter werden vom Betreiber dieser Webseite mit größter Sorgfalt beachtet. Sollten Sie trotzdem auf eine Urheberrechtsverletzung aufmerksam werden, bitten wir um einen entsprechenden Hinweis. Bei Bekanntwerden derartiger Rechtsverletzungen werden wir den betroffenen Inhalt umgehend entfernen",
         "source": "Quelle"
+    },
+    "privacy": {
+        "headline": "Datenschutzerklärung",
+        "generalText1": "In folgender Datenschutzerklärung informieren wir Sie über die wichtigsten Aspekte der Datenverarbeitung im Rahmen unserer Webseite. Wir erheben und verarbeiten personenbezogene Daten nur auf Grundlage der gesetzlichen Bestimmungen (Datenschutzgrundverordnung, Telekommunikationsgesetz 2003).",
+        "generalText2": "Sobald Sie als Benutzer auf unsere Webseite zugreifen oder diese besuchen wird Ihre IP-Adresse, Beginn sowie Beginn und Ende der Sitzung erfasst. Dies ist technisch bedingt und stellt somit ein berechtigtes Interesse iSv Art 6 Abs 1 lit f DSGVO.",
+        "contactUs": "Kontakt mit uns",
+        "contactText": "Wenn Sie uns, entweder über unser Kontaktformular auf unserer Webseite, oder per Email kontaktieren, dann werden die von Ihnen an uns übermittelten Daten zwecks Bearbeitung Ihrer Anfrage oder für den Fall von weiteren Anschlussfragen für sechs Monate bei uns gespeichert. Es erfolgt, ohne Ihre Einwilligung, keine Weitergabe Ihrer übermittelten Daten.",
+        "fontsHeadline": "Google Fonts",
+        "fontsText1": "Unsere Website verwendet Schriftarten von „Google Fonts“. Der Dienstanbieter dieser Funktion ist:",
+        "fontsText2": "Google Ireland Limited Gordon House, Barrow Street Dublin 4. Ireland",
+        "fontsPhone": "Tel: +353 1 543 1000",
+        "fontsText3": "Beim Aufrufen dieser Webseite lädt Ihr Browser Schriftarten und speichert diese in den Cache. Da Sie, als Besucher der Webseite, Daten des Dienstanbieters empfangen kann Google unter Umständen Cookies auf Ihrem Rechner setzen oder analysieren.",
+        "fontsText4": "Die Nutzung von „Google-Fonts“ dient der Optimierung unserer Dienstleistung und der einheitlichen Darstellung von Inhalten. Dies stellt ein berechtigtes Interesse im Sinne von Art. 6 Abs. 1 lit. f DSGVO dar.",
+        "fontsText5": "Weitere Informationen zu Google Fonts erhalten Sie unter folgendem Link:",
+        "fontsLink1": "https://developers.google.com/fonts/faq",
+        "fontsText6": "Weitere Informationen über den Umgang mit Nutzerdaten von Google können Sie der Datenschutzerklärung entnehmen:",
+        "fontsLink2": "https://policies.google.com/privacy?hl=de .",
+        "fontsText7": "Google verarbeitet die Daten auch in den USA, hat sich jedoch dem EU-US Privacy-Shield unterworfen.",
+        "fontsLink3": "https://www.privacyshield.gov/EU-US-Framework",
+        "rightsHeadline": "Ihre Rechte als Betroffener",
+        "rightsText1": "Sie als Betroffener haben bezüglich Ihrer Daten, welche bei uns gespeichert sind grundsätzlich ein Recht auf:",
+        "rightsList1": "Auskunft",
+        "rightsList2": "Löschung der Daten",
+        "rightsList3": "Berichtigung der Daten",
+        "rightsList4": "Übertragbarkeit der Daten",
+        "rightsList5": "Wiederruf und Widerspruch zur Datenverarbeitung",
+        "rightsList6": "Einschränkung",
+        "rightsText2": "Wenn sie vermuten, dass im Zuge der Verarbeitung Ihrer Daten Verstöße gegen das Datenschutzrecht passiert sind, so haben Sie die Möglichkeit sich bei uns (c.cigan@gmx.net) oder der Datenschutzbehörde zu beschweren.",
+        "contactHeadline": "Sie erreichen uns unter folgenden Kontaktdaten:",
+        "nameTitle": "Webseitenbetreiber: ",
+        "name": "Cecil Cigan",
+        "phoneTitle": "Telefonnummer: ",
+        "phone": "06645463994",
+        "emailTitle" : "Email: ",
+        "email": "c.cigan@gmx.net",
+        "source": "Quelle: ",
+        "sourceLink": "Datenschutzgenerator Österreich DSGVO"
     }
 
 

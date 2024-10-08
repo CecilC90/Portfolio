@@ -1,0 +1,27 @@
+.imprint-container {
+  padding: 32px 100px;
+}
+@media (max-width: 950px) {
+  .imprint-container {
+    padding: 32px 25px;
+  }
+}
+
+h4 {
+  font-size: 32px;
+  margin-bottom: 8px;
+}
+@media (max-width: 950px) {
+  h4 {
+    font-size: 22px;
+  }
+}
+
+p {
+  margin-bottom: 16px;
+}
+@media (max-width: 950px) {
+  p {
+    font-size: 14px;
+  }
+}/*# sourceMappingURL=imprint.component.css.map */
