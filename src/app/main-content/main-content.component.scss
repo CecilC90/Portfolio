@@ -50,7 +50,7 @@ app-my-skills {
 app-portfolio {
   display: flex;
   flex-direction: column;
-  max-width: 1440px;
+  width: 100%;
   position: relative;
   overflow: hidden;
 
@@ -67,6 +67,6 @@ app-contact {
   display: flex;
   flex-direction: column;
   position: relative;
-  max-width: 1440px;
+  width: 100%;
   overflow: hidden;
 }

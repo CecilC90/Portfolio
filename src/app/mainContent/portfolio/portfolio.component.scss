@@ -44,8 +44,15 @@
   }
 }
 
+.center-container{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
 .projects-container {
-  padding: 116px 100px;
+  padding: 116px 0px;
+  width: 1440px;
 
   @media (max-width: 1220px) {
     padding: 116px 25px;
@@ -112,6 +119,7 @@
   align-items: flex-end;
   gap: 35px;
   z-index: 6;
+  justify-content: space-between;
 
   @media (max-width: 1220px) {
     align-items: center;

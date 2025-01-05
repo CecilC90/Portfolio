@@ -12,62 +12,67 @@
     {{ "portfolio.text" | translate }}
   </p>
 </div>
-<div class="projects-container">
-  @for (project of projects; track $index) {
-  <div
-    data-aos="flip-up"
-    class="project-box"
-    [ngStyle]="{ 'flex-direction': $index % 2 === 0 ? 'row' : 'row-reverse' }"
-  >
-    <div class="left-container">
-      <img
-        src="../../../assets/img/projects/{{ project.projectImg }}.svg"
-        alt=""
-      />
-    </div>
-    <div>
-      <div class="right-container">
-        <div
-          class="project-description"
-          [ngStyle]="{
-            'align-items': $index % 2 === 0 ? 'flex-start' : 'flex-end'
-          }"
-        >
-          <h3>{{ project.projectName }}</h3>
-          <h4>{{ project.projectTechnologie }}</h4>
-          <p [ngStyle]="{ 'text-align': $index % 2 === 0 ? 'start' : 'end' }">
-            {{ project.projectDescription | translate }}
-          </p>
-        </div>
-        <div
-          class="button-container"
-          [ngStyle]="{ 'justify-content': $index % 2 === 0 ? 'start' : 'end' }"
-        >
-          <a
-            class="test-button"
-            href="{{ project.projectLink }}"
-            target="_blank"
-            >Live test</a
+<div class="center-container">
+  <div class="projects-container">
+    @for (project of projects; track $index) {
+    <div
+      data-aos="flip-up"
+      class="project-box"
+      [ngStyle]="{ 'flex-direction': $index % 2 === 0 ? 'row' : 'row-reverse' }"
+    >
+      <div class="left-container">
+        <img
+          src="../../../assets/img/projects/{{ project.projectImg }}.svg"
+          alt=""
+        />
+      </div>
+      <div>
+        <div class="right-container">
+          <div
+            class="project-description"
+            [ngStyle]="{
+              'align-items': $index % 2 === 0 ? 'flex-start' : 'flex-end'
+            }"
           >
-          <a
-            class="git-button"
-            href="{{ project.projectGitHub }}"
-            target="_blank"
-            >GitHub</a
+            <h3>{{ project.projectName }}</h3>
+            <h4>{{ project.projectTechnologie }}</h4>
+            <p [ngStyle]="{ 'text-align': $index % 2 === 0 ? 'start' : 'end' }">
+              {{ project.projectDescription | translate }}
+            </p>
+          </div>
+          <div
+            class="button-container"
+            [ngStyle]="{
+              'justify-content': $index % 2 === 0 ? 'start' : 'end'
+            }"
           >
+            <a
+              class="test-button"
+              href="{{ project.projectLink }}"
+              target="_blank"
+              >Live test</a
+            >
+            <a
+              class="git-button"
+              href="{{ project.projectGitHub }}"
+              target="_blank"
+              >GitHub</a
+            >
+          </div>
         </div>
       </div>
     </div>
+    }
+    <img
+      class="purple-shadow"
+      src="../../../assets/img/Purple shadow 3.svg"
+      alt=""
+    />
+    <img
+      class="green-shadow"
+      src="../../../assets/img/Green_shadow3.svg"
+      alt=""
+    />
   </div>
-  }
-  <img
-    class="purple-shadow"
-    src="../../../assets/img/Purple shadow 3.svg"
-    alt=""
-  />
-  <img
-    class="green-shadow"
-    src="../../../assets/img/Green_shadow3.svg"
-    alt=""
-  />
+
 </div>

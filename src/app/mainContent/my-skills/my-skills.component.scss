@@ -2,14 +2,19 @@
 @import "./../about-me/about-me.component.scss";
 @import "./../atf/atf.component.scss";
 
-.main-container {
+.main-section {
   position: relative;
   width: 100%;
   display: flex;
   justify-content: center;
-  align-items: center;
 }
 
+.line-container {
+  display: flex;
+  align-items: flex-start;
+  padding-top: 66px;
+  margin-left: -70px;
+}
 
 .line {
   display: flex;
