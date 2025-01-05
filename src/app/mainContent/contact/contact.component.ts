@@ -23,8 +23,8 @@ export class ContactComponent implements OnInit {
   }
 
   public isChecked = false;
-  emailSentSuccessfully = false;
 
+  
 
   contactData = {
     name: '',
@@ -49,12 +49,10 @@ export class ContactComponent implements OnInit {
   toggleCheckbox(event: Event): void {
     this.isChecked = (event.target as HTMLInputElement).checked;
     this.contactData.privacy = this.isChecked;
-    console.log(this.isChecked);
-  }
-
-  onSubmit(ngForm: NgForm) {
-    // Ausgabe der aktuellen Daten zur Überprüfung in der Konsole
     console.log(this.contactData);
+  }
+  
+  onSubmit(ngForm: NgForm) {
   
     // Überprüfe, ob das Formular übermittelt wurde, gültig ist und ob die Testbedingung erfüllt ist.
     if (ngForm.submitted && ngForm.form.valid && !this.mailTest) {
@@ -66,7 +64,10 @@ export class ContactComponent implements OnInit {
             console.log('E-Mail erfolgreich gesendet:', response);
             ngForm.resetForm();  // Setze das Formular zurück nach erfolgreicher Übermittlung
           },
-          
+          error: (error) => {
+            console.error('Fehler beim Senden der E-Mail:', error);
+            // Fehlerbehandlung oder Benachrichtigung für den Nutzer
+          },
           complete: () => console.info('E-Mail Sendevorgang abgeschlossen'),
         });
     } else if (ngForm.submitted && ngForm.form.valid && this.mailTest) {
@@ -77,4 +78,5 @@ export class ContactComponent implements OnInit {
       console.warn('Das Formular ist ungültig oder wurde noch nicht übermittelt.');
     }
   }
+  
 }

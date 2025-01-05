@@ -1,17 +1,22 @@
 @import "./../../../styles.scss";
 
+.main-container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 30%;
+  width: 1440px;
+}
+
 .about-me-container {
   margin-top: -32px;
   position: relative;
   display: flex;
   align-items: center;
-  justify-content: center;
-  //padding-left: 100px;
-  gap: 149px;
+  justify-content: space-around;
   padding-bottom: 154px;
   background-color: transparent;
   width: 100%;
-  overflow: hidden;
 
   @media (max-width: 1440px) {
     width: 100%;
@@ -72,26 +77,19 @@ h1 {
 .picture-container {
   display: flex;
   align-items: center;
-  height: 509px;
-  width: 509px;
+  justify-content: center;
+  height: 400px;
+  width: 400px;
+  border-radius: 50%;
+  border: 5px solid #70e61c;
+  overflow: hidden;
+  z-index: 5;
 
   img {
+    position: relative;
+    top: 41px;
+    left: 10px;
     height: 453px;
-    width: 453px;
-  }
-
-  hr {
-    position: absolute;
-    display: flex;
-    width: 267px;
-    height: 4px;
-    background-color: $hover-link-color;
-    border: none;
-    z-index: 6;
-  }
-
-  @media (max-width: 1000px) {
-    display: none;
   }
 }
 
@@ -112,7 +110,7 @@ h1 {
 
 .purple-shadow {
   position: absolute;
-  top: -8px;
+  top: 400px;
   right: -0px;
   z-index: 4;
 
@@ -120,7 +118,7 @@ h1 {
     z-index: -1;
   }
 
-  @media(max-width: 540px) {
+  @media (max-width: 540px) {
     display: none;
   }
 }

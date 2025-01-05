@@ -61,7 +61,10 @@ body {
 }
 
 app-root {
-  width: 1440px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  width: 100%;
   overflow: hidden;
 
   @media (max-width: 1440px) {
@@ -69,6 +72,7 @@ app-root {
     position: relative;
   }
 }
+
 
 body.no-scroll {
   overflow: hidden;
@@ -90,4 +94,11 @@ body.no-scroll {
 
 #contact {
   scroll-margin-top: 122px;
+}
+
+app-main-content {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  width: 100%;
 }

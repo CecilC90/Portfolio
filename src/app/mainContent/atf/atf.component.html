@@ -1,7 +1,7 @@
 <div class="atf">
   <div class="test">
     <div class="picture-container">
-      <img src="../../../assets/img/hero character photo.png" alt="" />
+      <img src="../../../assets/img/character-photo.png" alt="" />
       <div class="shadows-container">
         <img
           class="shadow-dots"
@@ -12,7 +12,9 @@
     </div>
     <div class="head-container">
       <div class="text-container">
-        <div class="vertikal" [ngClass]="{ 'german-font': isGerman() }">{{ "atf.iam" | translate }}</div>
+        <div class="vertikal" [ngClass]="{ 'german-font': isGerman() }">
+          {{ "atf.iam" | translate }}
+        </div>
         <div>
           <div class="name">Cecil Cigan</div>
           <div class="title">FRONTEND DEVELOPER</div>
@@ -22,39 +24,39 @@
         <a href="#contact" class="main-button">{{ "atf.talk" | translate }}</a>
       </div>
     </div>
-    <div class="curved-background-container">
-      <img
-        class="curved-background-container"
-        src="../../../assets/img/Vector.svg"
-        alt=""
-      />
-    </div>
   </div>
   <div class="bottom-container">
-    <div class="social-links-container">
+    <div class="flex-1">
       <span class="divider-line"></span>
-      <span>
-        <a href="https://github.com/CecilC90" target="_blank">
-          <img src="../../../assets/img/git-icon.svg" alt="" />
-        </a>
-      </span>
-      <span>
-        <a href="#contact">
-          <img src="../../../assets/img/mail-icon.svg" alt="" />
-        </a>
-      </span>
-      <span>
-        <a href="">
-          <img
-            src="../../../assets/img/linkedIn-icon.svg"
-            alt=""
-            target="_blank"
-          />
-        </a>
-      </span>
-      <span class="mobile">
-        <a href=""> testgmx.at </a>
-      </span>
+    </div>                         
+    <div class="social-links-container">
+      <div>
+        
+      </div>
+      <div class="icon-container">
+        <span>
+          <a href="https://github.com/CecilC90" target="_blank">
+            <img src="../../../assets/img/git-icon.svg" alt="" />
+          </a>
+        </span>
+        <span>
+          <a href="#contact">
+            <img src="../../../assets/img/mail-icon.svg" alt="" />
+          </a>
+        </span>
+        <span>
+          <a href="">
+            <img
+              src="../../../assets/img/linkedIn-icon.svg"
+              alt=""
+              target="_blank"
+            />
+          </a>
+        </span>
+        <span class="mobile">
+          <a href=""> testgmx.at </a>
+        </span>
+      </div>
     </div>
     <div class="scroll-container">
       <span>
@@ -62,5 +64,12 @@
         <img src="../../../assets/img/downArrow-icon.svg" alt="" />
       </span>
     </div>
+  </div>
+  <div class="curved-background-container">
+    <img
+      class="curved-background-container"
+      src="../../../assets/img/Vector.svg"
+      alt=""
+    />
   </div>
 </div>

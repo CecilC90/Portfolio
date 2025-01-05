@@ -1,12 +1,11 @@
 @import "./../../../styles.scss";
 
 .atf {
-  position: relative;
+  //position: relative;
   display: flex;
   align-items: center;
   flex-direction: column;
   align-items: center;
-  max-width: 1440px;
   width: 100%;
   padding-bottom: 122px;
 
@@ -64,7 +63,7 @@
 
 .curved-background-container {
   position: absolute;
-  top: 226px;
+  top: 250px;
   left: 0;
   right: 0;
   width: 100%;
@@ -74,6 +73,10 @@
 
   img {
     width: 100%;
+  }
+
+  @media (min-width: 1900px) {
+    top: 230px;
   }
 
   @media (max-width: 1400px) {
@@ -387,9 +390,13 @@
 }
 
 .bottom-container {
-  position: relative;
-  height: 120px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  gap: 0px;
   width: 100%;
+  height: 120px;
+  z-index: 5;
 
   @media (max-width: 1440px) {
     width: 100%;
@@ -400,17 +407,20 @@
   }
 }
 
+.flex-1 {
+  flex: 1;
+}
+
 .social-links-container {
   display: flex;
   align-items: center;
-  position: absolute;
   bottom: 52px;
   z-index: 5;
   gap: 42px;
   font-size: 23px;
   font-weight: 400;
   height: 40px;
-  width: 484px;
+  width: 1440px;
 
   @media (max-width: 1440px) {
     left: 0px;
@@ -421,19 +431,9 @@
     width: 100%;
   }
 
-  .divider-line {
-    border: solid 2px #9747ff;
-    width: 100px;
-    border-top-right-radius: 5px;
-    border-bottom-right-radius: 5px;
-
-    @media (max-width: 800px) {
-      width: 64px;
-    }
-
-    @media (max-width: 360px) {
-      width: 42px;
-    }
+  .icon-container {
+    display: flex;
+    gap: 42px;
   }
 
   img {
@@ -447,17 +447,38 @@
   }
 }
 
+.divider-line {
+  display: flex;
+  border: solid 2px #9747ff;
+  min-width: 100px;
+  border-top-right-radius: 5px;
+  border-bottom-right-radius: 5px;
+
+  @media (max-width: 800px) {
+    width: 64px;
+  }
+
+  @media (max-width: 360px) {
+    width: 42px;
+  }
+}
+
 .scroll-container {
+  position: relative;
+  bottom: 28px;
   display: flex;
   align-items: center;
-  position: absolute;
-  right: -25px;
-  bottom: 100px;
+  justify-content: center;
   z-index: 5;
   gap: 42px;
   font-size: 23px;
   font-weight: 400;
   rotate: 90deg;
+  flex: 1;
+
+  span {
+    white-space: nowrap;
+  }
 
   @media (max-width: 900px) {
     display: none;
