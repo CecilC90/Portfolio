@@ -79,8 +79,24 @@
     top: 230px;
   }
 
+  @media (min-width: 2200px) {
+    top: 212px;
+  }
+
+  @media (min-width: 2700px) {
+    top: 184px;
+  }
+
   @media (max-width: 1400px) {
     top: 217px;
+  }
+
+  @media (min-width: 3200px) {
+    top: 154px;
+  }
+
+  @media (max-width: 1570px) {
+    top: 264px;
   }
 
   @media (max-width: 1090px) {
@@ -474,11 +490,9 @@
   font-size: 23px;
   font-weight: 400;
   rotate: 90deg;
-  flex: 1;
+  white-space: nowrap;
 
-  span {
-    white-space: nowrap;
-  }
+  
 
   @media (max-width: 900px) {
     display: none;

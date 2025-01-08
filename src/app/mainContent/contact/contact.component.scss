@@ -273,8 +273,9 @@ input:-internal-autofill-previewed {
 .go-up-button {
   display: flex;
   justify-content: flex-end;
-  padding-right: 100px;
+  //padding-right: 100px;
   padding-bottom: 90px;
+  width: 1440px;
 
   @media (max-width: 1220px) {
     padding-right: 25px;

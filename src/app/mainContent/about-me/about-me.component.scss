@@ -6,6 +6,10 @@
   align-items: center;
   gap: 30%;
   width: 1440px;
+
+  @media(max-width: 1440px) {
+    width: 100%;
+  }
 }
 
 .about-me-container {

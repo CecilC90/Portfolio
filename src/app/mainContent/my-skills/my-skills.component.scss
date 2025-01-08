@@ -35,6 +35,10 @@
   padding-bottom: 170px;
   gap: 48px;
 
+  @media (max-width: 1440px) {
+    width: 100%;
+    }
+
   @media (max-width: 1220px) {
     flex-direction: column-reverse;
     width: 100%;
