@@ -1,5 +1,5 @@
 <div class="main-section">
-  <div class="flex-1">
+  <div class="flex-1 d-none">
     <img
       class="green-shadow"
       src="../../../assets/img/Green shadow 2.svg"
@@ -7,6 +7,7 @@
     />
   </div>
   <div class="my-skills-container">
+    <span class="mobile-line"></span>
     <div class="icon-container" data-aos="zoom-in">
       @for (icon of icons; track $index) {
       <div class="icon">
@@ -37,7 +38,7 @@
       "my-skills.button" | translate
     }}</a>
   </div>
-  <div class="flex-1 line-container">
+  <div class="flex-1 line-container d-none">
     <span class="line"></span>
   </div>
 </div>
