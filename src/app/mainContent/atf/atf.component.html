@@ -10,18 +10,22 @@
         />
       </div>
     </div>
-    <div class="head-container">
-      <div class="text-container">
-        <div class="vertikal" [ngClass]="{ 'german-font': isGerman() }">
-          {{ "atf.iam" | translate }}
+    <div class="right-container">
+      <div class="head-container">
+        <div class="text-container">
+          <div class="vertikal" [ngClass]="{ 'german-font': isGerman() }">
+            {{ "atf.iam" | translate }}
+          </div>
+          <div>
+            <div class="name">Cecil Cigan</div>
+            <div class="title">FRONTEND DEVELOPER</div>
+          </div>
         </div>
-        <div>
-          <div class="name">Cecil Cigan</div>
-          <div class="title">FRONTEND DEVELOPER</div>
+        <div class="flex">
+          <a href="#contact" class="main-button">{{
+            "atf.talk" | translate
+          }}</a>
         </div>
-      </div>
-      <div class="flex">
-        <a href="#contact" class="main-button">{{ "atf.talk" | translate }}</a>
       </div>
     </div>
   </div>
@@ -30,7 +34,6 @@
       <span class="divider-line"></span>
     </div>
     <div class="social-links-container">
-      <div></div>
       <div class="icon-container">
         <span>
           <a href="https://github.com/CecilC90" target="_blank">
@@ -52,16 +55,17 @@
           </a>
         </span>
         <span class="mobile">
-          <a href=""> testgmx.at </a>
+          <a href="mailto:c.cigan@gmx.net"> c.cigan&#64;gmx.net </a>
+        </span>
+      </div>
+      <div>
+        <span class="scroll-container">
+          {{ "atf.scroll" | translate }}
+          <img src="../../../assets/img/downArrow-icon.svg" alt="" />
         </span>
       </div>
     </div>
-    <div>
-      <span class="scroll-container">
-        {{ "atf.scroll" | translate }}
-        <img src="../../../assets/img/downArrow-icon.svg" alt="" />
-      </span>
-    </div>
+    
     <div class="flex-1"></div>
   </div>
   <div class="curved-background-container">

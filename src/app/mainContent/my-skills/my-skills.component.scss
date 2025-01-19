@@ -89,16 +89,20 @@
   border-bottom-right-radius: 5px;
   position: absolute;
   right: 0px;
-  top: 54px;
+  top: 50%;
 
   @media (max-width: 1220px) {
     display: flex;
-}
+  }
 
-@media (max-width: 1000px) {
-  display: none;
-}
+  @media (max-width: 1000px) {
+    display: none;
+  }
 
+  @media (max-width: 500px) {
+    display: flex;
+    min-width: 20px;
+  }
 }
 
 .icon-container {
@@ -115,6 +119,7 @@
     padding-left: 100px;
     padding: 0 25px;
     padding-bottom: 67px;
+    justify-content: center;
   }
 
   @media (max-width: 1160px) {
@@ -122,8 +127,13 @@
     justify-content: center;
   }
 
-  @media (max-width: 500px) {
+  @media (max-width: 600px) {
     column-gap: 56px;
+    padding: 0px  25px;
+  }
+
+  @media (max-width: 800px) {
+    padding: 0;
   }
 }
 
@@ -166,6 +176,10 @@
   gap: 34px;
   padding-right: 100px;
 
+  @media (max-width: 1220px) {
+    padding-right: 0px;
+  }
+
   @media (max-width: 1000px) {
     padding-right: 0;
     align-items: center;
@@ -183,9 +197,30 @@
   display: flex;
   align-items: center;
   justify-content: flex-end;
+  position: relative;
+
+  @media (max-width: 1220px) {
+    padding-right: 65px;
+  }
+
+  @media (max-width: 1000px) {
+    padding-right: 0px;
+  }
+
+  @media (max-width: 500px) {
+    padding-right: 26px;
+  }
 }
 
 .text-skill {
+  @media (max-width: 1220px) {
+    padding-right: 65px;
+  }
+
+  @media (max-width: 1000px) {
+    padding-right: 0px;
+  }
+
   @media (max-width: 500px) {
     align-items: flex-end;
     padding: 0;
