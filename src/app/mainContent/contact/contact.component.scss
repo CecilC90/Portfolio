@@ -28,9 +28,16 @@
     padding-left: 0px;
   }
 
-  @media (max-width: 580px) {
+  @media (max-width: 500px) {
     gap: 5px;
+    justify-content: flex-start;
   }
+
+  @media (max-width: 450px) {
+    padding-bottom: 25px;
+  }
+
+
 }
 
 .line {
@@ -50,10 +57,22 @@
   }
 }
 
+
+.line-mobile {
+  display: none;
+
+  @media (max-width: 500px) {
+    display: block;
+    width: 20px;
+    height: 4px;
+    background-color: $purple-background-color;
+  }
+}
+
 .main-container-contact {
   display: flex;
   justify-content: space-between;
-  padding-bottom: 51px;
+  padding-bottom: 180px;
   width: 1440px;
 
   @media (max-width: 1440px) {
@@ -86,6 +105,10 @@
       padding-bottom: 45px;
       align-items: center;
     }
+
+    @media (max-width: 500px) {
+      align-items: flex-start;
+    }
   }
 
   .text-container span {
@@ -108,6 +131,7 @@
   @media (max-width: 1220px) {
     position: relative;
     padding: 0px 25px;
+    padding-bottom: 180px;
   }
 
   @media (max-width: 1000px) {
@@ -119,6 +143,7 @@
   display: flex;
   flex-direction: column;
   max-width: 617px;
+  position: relative;
 
   @media (max-width: 1440px) {
     padding-right: 100px;
@@ -321,33 +346,26 @@ input:-internal-autofill-previewed {
   display: block;
 }
 
-.go-up-container {
-  width: 1440px;
-  height: 180px;
-  position: relative;
-
-  @media (max-width: 1440px) {
-    width: 100%;
-  }
-}
-
 .go-up-button {
   width: 39px;
   height: auto;
   display: flex;
   justify-content: flex-end;
   z-index: 99;
-  padding-bottom: 90px;
   position: absolute;
   right: 0;
+  bottom: -101px;
 
   @media (max-width: 1440px) {
-    right: 139px;
+    padding-right: 100px;
   }
 
+  @media (max-width: 1000px) {
+    padding-right: 0px;
+  }
 
-  @media (max-width: 1200px) {
-    right: 100px;
+  @media (max-width: 680px) {
+    padding-right: 25px;
   }
 
 

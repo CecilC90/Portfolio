@@ -27,7 +27,12 @@
         />
       </div>
       <div>
-        <div class="right-container">
+        <div
+          class="right-project-container"
+          [ngStyle]="{
+            'align-items': $index % 2 === 0 ? 'flex-start' : 'flex-end'
+          }"
+        >
           <div
             class="project-description"
             [ngStyle]="{
@@ -74,5 +79,4 @@
       alt=""
     />
   </div>
-
 </div>

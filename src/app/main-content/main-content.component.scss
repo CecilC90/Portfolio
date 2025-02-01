@@ -7,7 +7,7 @@ body {
   width: 100%;
 }
 
-app-atf {
+atf {
   //max-width: 1440px;
   width: 100%;
   display: flex;
@@ -52,7 +52,7 @@ app-portfolio {
   flex-direction: column;
   width: 100%;
   position: relative;
-  overflow: hidden;
+  //overflow: hidden;
 
   @media (max-width: 1440px) {
     width: 100%;
